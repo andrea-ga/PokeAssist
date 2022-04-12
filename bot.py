@@ -75,15 +75,15 @@ def show(update: Update, context: CallbackContext) -> None:
     num_types = len(types) - 1
 
     if num_types == 1:
-        if weakness.__contains__(types[1]):
-            update.message.reply_text(show_weakness(types[1]))
-            update.message.reply_text(show_resistence(types[1]))
+        if weakness.__contains__(types[1].lower()):
+            update.message.reply_text(show_weakness(types[1].lower()))
+            update.message.reply_text(show_resistence(types[1].lower()))
         else:
             update.message.reply_text("Tipo non valido")
     elif num_types == 2:
-        if weakness.__contains__(types[1]) and weakness.__contains__(types[2]):
-            update.message.reply_text(show_weakness(types[1], types[2]))
-            update.message.reply_text(show_resistence(types[1], types[2]))
+        if weakness.__contains__(types[1].lower()) and weakness.__contains__(types[2].lower()):
+            update.message.reply_text(show_weakness(types[1].lower(), types[2].lower()))
+            update.message.reply_text(show_resistence(types[1].lower(), types[2].lower()))
         else:
             update.message.reply_text("Uno o entrambi i tipi non sono validi")
     else:
