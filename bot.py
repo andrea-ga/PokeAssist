@@ -40,7 +40,7 @@ resistence = {'fuoco': ['fuoco', 'erba', 'ghiaccio', 'coleottero', 'acciaio', 'f
             'ghiaccio': ['ghiaccio'],
             'lotta': ['coleottero', 'roccia', 'buio'],
             'veleno': ['erba', 'lotta', 'veleno', 'coleottero'],
-            'terra': ['veleno', 'roccia'],
+            'terra': ['veleno', 'roccia', 'folletto'],
             'volante': ['erba', 'lotta', 'coleottero'],
             'psico': ['lotta', 'psico'],
             'coleottero': ['erba', 'lotta', 'terra'],
@@ -63,10 +63,10 @@ nullify = {'fuoco': [],
             'psico': [],
             'coleottero': [],
             'roccia': [],
-            'spettro': ['normale'],
+            'spettro': ['normale', 'lotta'],
             'drago': [],
             'buio': ['psico'],
-            'acciaio': [],
+            'acciaio': ['veleno'],
             'folletto': ['drago']}
 
 
