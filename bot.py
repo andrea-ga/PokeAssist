@@ -16,60 +16,9 @@ logging.basicConfig(
 
 logger = logging.getLogger(__name__)
 
-weakness = {'fuoco': ['acqua', 'roccia', 'terra'],
-            'acqua': ['erba', 'elettro'],
-            'normale': ['lotta'],
-            'elettro': ['terra'],
-            'erba': ['fuoco', 'ghiaccio', 'veleno', 'volante', 'coleottero'],
-            'ghiaccio': ['fuoco', 'lotta', 'roccia', 'acciaio'],
-            'lotta': ['volante', 'psico', 'folletto'],
-            'veleno': ['terra', 'psico'],
-            'terra': ['acqua', 'erba', 'ghiaccio'],
-            'volante': ['elettro', 'ghiaccio', 'roccia'],
-            'psico': ['coleottero', 'spettro', 'buio'],
-            'coleottero': ['fuoco', 'volante', 'roccia'],
-            'roccia': ['acqua', 'erba', 'lotta', 'terra', 'acciaio'],
-            'spettro': ['spettro', 'buio'],
-            'drago': ['ghiaccio', 'drago', 'folletto'],
-            'buio': ['lotta', 'coleottero', 'folletto'],
-            'acciaio': ['fuoco', 'lotta', 'terra'],
-            'folletto': ['veleno', 'acciaio']}
-resistence = {'fuoco': ['fuoco', 'erba', 'ghiaccio', 'coleottero', 'acciaio', 'folletto'],
-            'acqua': ['fuoco', 'acqua', 'ghiaccio', 'acciaio'],
-            'normale': [],
-            'elettro': ['elettro', 'volante', 'acciaio'],
-            'erba': ['acqua', 'elettro', 'erba', 'terra'],
-            'ghiaccio': ['ghiaccio'],
-            'lotta': ['coleottero', 'roccia', 'buio'],
-            'veleno': ['erba', 'lotta', 'veleno', 'coleottero'],
-            'terra': ['veleno', 'roccia', 'folletto'],
-            'volante': ['erba', 'lotta', 'coleottero'],
-            'psico': ['lotta', 'psico'],
-            'coleottero': ['erba', 'lotta', 'terra'],
-            'roccia': ['normale', 'fuoco', 'veleno', 'volante'],
-            'spettro': ['veleno', 'coleottero'],
-            'drago': ['fuoco', 'acqua', 'elettro', 'erba'],
-            'buio': ['spettro', 'buio'],
-            'acciaio': ['normale', 'erba', 'ghiaccio', 'volante', 'psico', 'coleottero', 'roccia', 'drago', 'acciaio', 'folletto'],
-            'folletto': ['lotta', 'coleottero', 'buio']}
-nullify = {'fuoco': [],
-            'acqua': [],
-            'normale': ['spettro'],
-            'elettro': [],
-            'erba': [],
-            'ghiaccio': [],
-            'lotta': [],
-            'veleno': [],
-            'terra': ['elettro'],
-            'volante': ['terra'],
-            'psico': [],
-            'coleottero': [],
-            'roccia': [],
-            'spettro': ['normale', 'lotta'],
-            'drago': [],
-            'buio': ['psico'],
-            'acciaio': ['veleno'],
-            'folletto': ['drago']}
+weakness = {}
+strength = {}
+nullify = {}
 
 pokemon = {"bulbasaur": ["erba veleno", "livello 16", "ivysaur", "erba veleno", "livello 32", "venusaur", "erba veleno"],
            "ivysaur": ["bulbasaur"],
@@ -85,124 +34,127 @@ pokemon = {"bulbasaur": ["erba veleno", "livello 16", "ivysaur", "erba veleno", 
 }
 
 
-def show(update: Update, context: CallbackContext) -> None:
+def show(update: Update, context: CallbackContext):
+    if not weakness or not strength or not nullify:
+        read_typechart()
+
     text = update.message.text.split()
     num_types = len(text) - 1
 
     weakness_c = copy.deepcopy(weakness)
-    resistence_c = copy.deepcopy(resistence)
+    strength_c = copy.deepcopy(strength)
     nullify_c = copy.deepcopy(nullify)
 
     if text[0] == "/dr2" or text[0] == "/dr1":
         weakness_c.pop("folletto", None)
-        resistence_c.pop("folletto", None)
+        strength_c.pop("folletto", None)
         nullify_c.pop("folletto", None)
 
-        for type, weak in weakness_c.items():
+        for typ, weak in weakness_c.items():
             if weak.__contains__("folletto"):
                 count = 0
                 for w in weak:
                     if w == "folletto":
-                        weakness_c[type].pop(count)
+                        weakness_c[typ].pop(count)
                         break
                     else:
                         count += 1
 
-        for type, res in resistence_c.items():
+        for typ, res in strength_c.items():
             if res.__contains__("folletto"):
                 count = 0
                 for r in res:
                     if r == "folletto":
-                        resistence_c[type].pop(count)
+                        strength_c[typ].pop(count)
                         break
                     else:
                         count += 1
 
-        for type, nul in nullify_c.items():
+        for typ, nul in nullify_c.items():
             if nul.__contains__("folletto"):
                 count = 0
                 for n in nul:
                     if n == "folletto":
-                        nullify_c[type].pop(count)
+                        nullify_c[typ].pop(count)
                         break
                     else:
                         count += 1
 
         if text[0] == "/dr2":
-            resistence_c["acciaio"].append("buio")
-            resistence_c["acciaio"].append("spettro")
+            strength_c["acciaio"].append("buio")
+            strength_c["acciaio"].append("spettro")
         elif text[0] == "/dr1":
             weakness_c.pop("acciaio", None)
-            resistence_c.pop("acciaio", None)
+            strength_c.pop("acciaio", None)
             nullify_c.pop("acciaio", None)
             weakness_c.pop("buio", None)
-            resistence_c.pop("buio", None)
+            strength_c.pop("buio", None)
             nullify_c.pop("buio", None)
 
-            for type, weak in weakness_c.items():
+            for typ, weak in weakness_c.items():
                 if weak.__contains__("acciaio"):
                     count = 0
                     for w in weak:
                         if w == "acciaio":
-                            weakness_c[type].pop(count)
+                            weakness_c[typ].pop(count)
                             break
                         else:
                             count += 1
 
-            for type, res in resistence_c.items():
+            for typ, res in strength_c.items():
                 if res.__contains__("acciaio"):
                     count = 0
                     for r in res:
                         if r == "acciaio":
-                            resistence_c[type].pop(count)
+                            strength_c[typ].pop(count)
                             break
                         else:
                             count += 1
 
-            for type, nul in nullify_c.items():
+            for typ, nul in nullify_c.items():
                 if nul.__contains__("acciaio"):
                     count = 0
                     for n in nul:
                         if n == "acciaio":
-                            nullify_c[type].pop(count)
+                            nullify_c[typ].pop(count)
                             break
                         else:
                             count += 1
 
-            for type, weak in weakness_c.items():
+            for typ, weak in weakness_c.items():
                 if weak.__contains__("buio"):
                     count = 0
                     for w in weak:
                         if w == "buio":
-                            weakness_c[type].pop(count)
+                            weakness_c[typ].pop(count)
                             break
                         else:
                             count += 1
 
-            for type, res in resistence_c.items():
+            for typ, res in strength_c.items():
                 if res.__contains__("buio"):
                     count = 0
                     for r in res:
                         if r == "buio":
-                            resistence_c[type].pop(count)
+                            strength_c[typ].pop(count)
                             break
                         else:
                             count += 1
 
-            for type, nul in nullify_c.items():
+            for typ, nul in nullify_c.items():
                 if nul.__contains__("buio"):
                     count = 0
                     for n in nul:
                         if n == "buio":
-                            nullify_c[type].pop(count)
+                            nullify_c[typ].pop(count)
                             break
                         else:
                             count += 1
 
             count = 0
-            for res in resistence_c["fuoco"]:
+            for res in strength_c["fuoco"]:
                 if res == "ghiaccio":
-                    resistence_c["fuoco"].pop(count)
+                    strength_c["fuoco"].pop(count)
                     break
                 else:
                     count += 1
@@ -216,9 +168,9 @@ def show(update: Update, context: CallbackContext) -> None:
                     count += 1
 
             count = 0
-            for res in resistence_c["veleno"]:
+            for res in strength_c["veleno"]:
                 if res == "coleottero":
-                    resistence_c["veleno"].pop(count)
+                    strength_c["veleno"].pop(count)
                     break
                 else:
                     count += 1
@@ -229,8 +181,8 @@ def show(update: Update, context: CallbackContext) -> None:
 
     if num_types == 1:
         if weakness_c.__contains__(text[1].lower()):
-            update.message.reply_text(show_weakness(weakness_c, resistence_c, nullify_c, text[1].lower()))
-            update.message.reply_text(show_resistence(weakness_c, resistence_c, nullify_c, text[1].lower()))
+            update.message.reply_text(show_weakness(weakness_c, strength_c, nullify_c, text[1].lower()))
+            update.message.reply_text(show_resistence(weakness_c, strength_c, nullify_c, text[1].lower()))
         else:
             if ((text[0] == "/dr1" and (text[1].lower() == "buio" or text[1].lower() == "acciaio"
                                          or text[1].lower() == "folletto")) or (
@@ -240,8 +192,8 @@ def show(update: Update, context: CallbackContext) -> None:
                 update.message.reply_text("Tipo non valido")
     elif num_types == 2:
         if weakness_c.__contains__(text[1].lower()) and weakness_c.__contains__(text[2].lower()):
-            update.message.reply_text(show_weakness(weakness_c, resistence_c, nullify_c, text[1].lower(), text[2].lower()))
-            update.message.reply_text(show_resistence(weakness_c, resistence_c, nullify_c, text[1].lower(), text[2].lower()))
+            update.message.reply_text(show_weakness(weakness_c, strength_c, nullify_c, text[1].lower(), text[2].lower()))
+            update.message.reply_text(show_resistence(weakness_c, strength_c, nullify_c, text[1].lower(), text[2].lower()))
         else:
             if ((text[0] == "/dr1" and (text[1].lower() == "buio" or text[1].lower() == "acciaio"
                                        or text[1].lower() == "folletto" or text[2].lower() == "buio" or
@@ -330,13 +282,16 @@ def show_resistence(*args):
     return tot
 
 
-def info(update: Update, context: CallbackContext) -> None:
+def info(update: Update, context: CallbackContext):
     text = update.message.text.split()
 
-    if pokemon.__contains__(text[1].lower()):
-        update.message.reply_text(show_pokemon(text[1].lower()))
+    if len(text) == 1:
+        update.message.reply_text("Il comando deve essere seguito dal nome del Pokémon.")
     else:
-        update.message.reply_text("Pokémon non esistente o non ancora presente nel nostro Pokédex (WIP :D)")
+        if pokemon.__contains__(text[1].lower()):
+            update.message.reply_text(show_pokemon(text[1].lower()))
+        else:
+            update.message.reply_text("Pokémon non esistente o non ancora presente nel nostro Pokédex (WIP :D)")
 
 
 def show_pokemon(poke):
@@ -369,7 +324,10 @@ def show_pokemon(poke):
     return mex
 
 
-def start(update: Update, context: CallbackContext) -> None:
+def start(update: Update, context: CallbackContext):
+    if not weakness or not strength or not nullify:
+        read_typechart()
+
     update.message.reply_text("Benvenut*! Il bot mostra Debolezze e Resistenze dei tipi Pokémon.\n"
                               "Digita il comando /dr seguito dal primo tipo "
                               "ed eventualmente secondo tipo.\n"
@@ -383,7 +341,7 @@ def start(update: Update, context: CallbackContext) -> None:
                               "/info charizard")
 
 
-def help(update: Update, context: CallbackContext) -> None:
+def help(update: Update, context: CallbackContext):
     update.message.reply_text("Digita il comando /dr seguito dal primo tipo "
                               "ed eventualmente secondo tipo.\n"
                               "Esempi:\n/dr fuoco\n"
@@ -396,7 +354,45 @@ def help(update: Update, context: CallbackContext) -> None:
                               "/info charizard")
 
 
-def main() -> None:
+def read_typechart():
+    f = open("typeChart.txt", "r")
+    count = 0
+
+    for li in f:
+        line = li.split()
+
+        if len(line) == 0:
+            count += 1
+        else:
+            if count == 0:
+                index = 0
+                weakness[line[0]] = []
+                for t in line:
+                    if index != 0:
+                        weakness[line[0]].append(line[index])
+
+                    index += 1
+            elif count == 1:
+                index = 0
+                strength[line[0]] = []
+                for t in line:
+                    if index != 0:
+                        strength[line[0]].append(line[index])
+
+                    index += 1
+            elif count == 2:
+                index = 0
+                nullify[line[0]] = []
+                for t in line:
+                    if index != 0:
+                        nullify[line[0]].append(line[index])
+
+                    index += 1
+
+    f.close()
+
+
+def main():
     updater = Updater(TOKEN)
     dispatcher = updater.dispatcher
 

@@ -1,0 +1,56 @@
+fuoco acqua roccia terra
+acqua erba elettro
+normale lotta
+elettro terra
+erba fuoco ghiaccio veleno volante coleottero
+ghiaccio fuoco lotta roccia acciaio
+lotta volante psico folletto
+veleno terra psico
+terra acqua erba ghiaccio
+volante elettro ghiaccio roccia
+psico coleottero spettro buio
+coleottero fuoco volante roccia
+roccia acqua erba lotta terra acciaio
+spettro spettro buio
+drago ghiaccio drago folletto
+buio lotta coleottero folletto
+acciaio fuoco lotta terra
+folletto veleno acciaio
+
+fuoco fuoco erba ghiaccio coleottero acciaio folletto
+acqua fuoco acqua ghiaccio acciaio
+normale
+elettro elettro volante acciaio
+erba acqua elettro erba terra
+ghiaccio ghiaccio
+lotta coleottero roccia buio
+veleno erba lotta veleno coleottero
+terra veleno roccia folletto
+volante erba lotta coleottero
+psico lotta psico
+coleottero erba lotta terra
+roccia normale fuoco veleno volante
+spettro veleno coleottero
+drago fuoco acqua elettro erba
+buio spettro buio
+acciaio normale erba ghiaccio volante psico coleottero roccia drago acciaio folletto
+folletto lotta coleottero buio
+
+fuoco
+acqua
+normale spettro
+elettro
+erba
+ghiaccio
+lotta
+veleno
+terra elettro
+volante terra
+psico
+coleottero
+roccia
+spettro normale lotta
+drago
+buio psico
+acciaio veleno
+folletto drago
