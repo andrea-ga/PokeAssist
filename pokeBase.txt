@@ -1,0 +1,9 @@
+bulbasaur erba-veleno livello-16 ivysaur erba-veleno livello-32 venusaur erba-veleno
+ivysaur bulbasaur
+venusaur bulbasaur
+charmander fuoco livello-16 charmeleon fuoco livello-36 charizard fuoco-volante
+charmeleon charmander
+charizard charmander
+squirtle acqua livello-16 wartortle acqua livello-36 blastoise acqua
+wartortle squirtle
+blastoise squirtle
