@@ -20,18 +20,7 @@ weakness = {}
 strength = {}
 nullify = {}
 
-pokemon = {"bulbasaur": ["erba veleno", "livello 16", "ivysaur", "erba veleno", "livello 32", "venusaur", "erba veleno"],
-           "ivysaur": ["bulbasaur"],
-           "venusaur": ["bulbasaur"],
-
-           "charmander": ["fuoco", "livello 16", "charmeleon", "fuoco", "livello 36", "charizard", "fuoco volante"],
-           "charmeleon": ["charmander"],
-           "charizard": ["charmander"],
-
-           "squirtle": ["acqua", "livello 16", "wartortle", "acqua", "livello 36", "blastoise", "acqua"],
-           "wartortle": ["squirtle"],
-           "blastoise": ["squirtle"]
-}
+pokebase = {}
 
 
 def show(update: Update, context: CallbackContext):
@@ -283,12 +272,15 @@ def show_resistence(*args):
 
 
 def info(update: Update, context: CallbackContext):
+    if not pokebase:
+        read_pokebase()
+
     text = update.message.text.split()
 
     if len(text) == 1:
         update.message.reply_text("Il comando deve essere seguito dal nome del Pokémon.")
     else:
-        if pokemon.__contains__(text[1].lower()):
+        if pokebase.__contains__(text[1].lower()):
             update.message.reply_text(show_pokemon(text[1].lower()))
         else:
             update.message.reply_text("Pokémon non esistente o non ancora presente nel nostro Pokédex (WIP :D)")
@@ -298,9 +290,9 @@ def show_pokemon(poke):
     mex = "INFO SU " + poke.upper() + "   \^-^/ :\n"
     count = 0
 
-    if len(pokemon[poke]) == 1:
-        mex += pokemon[poke][0] + " "
-        for i in pokemon[pokemon[poke][0]]:
+    if len(pokebase[poke]) == 1:
+        mex += pokebase[poke][0] + " "
+        for i in pokebase[pokebase[poke][0]]:
             if count == 0 or count == 3 or count == 6:
                 mex += "[" + i + "]\n"
             elif count == 1 or count == 4:
@@ -311,7 +303,7 @@ def show_pokemon(poke):
             count += 1
     else:
         mex += poke + " "
-        for i in pokemon[poke]:
+        for i in pokebase[poke]:
             if count == 0 or count == 3 or count == 6:
                 mex += "[" + i + "]\n"
             elif count == 1 or count == 4:
@@ -327,6 +319,9 @@ def show_pokemon(poke):
 def start(update: Update, context: CallbackContext):
     if not weakness or not strength or not nullify:
         read_typechart()
+
+    if not pokebase:
+        read_pokebase()
 
     update.message.reply_text("Benvenut*! Il bot mostra Debolezze e Resistenze dei tipi Pokémon.\n"
                               "Digita il comando /dr seguito dal primo tipo "
@@ -388,6 +383,23 @@ def read_typechart():
                         nullify[line[0]].append(line[index])
 
                     index += 1
+
+    f.close()
+
+
+def read_pokebase():
+    f = open("pokeBase.txt", "r")
+
+    for li in f:
+        line = li.split()
+        index = 0
+        pokebase[line[0]] = []
+
+        for p in line:
+            if index != 0:
+                pokebase[line[0]].append(line[index])
+
+            index += 1
 
     f.close()
 
