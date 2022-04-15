@@ -71,16 +71,29 @@ nullify = {'fuoco': [],
             'acciaio': ['veleno'],
             'folletto': ['drago']}
 
+pokemon = {"bulbasaur": ["erba veleno", "livello 16", "ivysaur", "erba veleno", "livello 32", "venusaur", "erba veleno"],
+           "ivysaur": ["bulbasaur"],
+           "venusaur": ["bulbasaur"],
+
+           "charmander": ["fuoco", "livello 16", "charmeleon", "fuoco", "livello 36", "charizard", "fuoco volante"],
+           "charmeleon": ["charmander"],
+           "charizard": ["charmander"],
+
+           "squirtle": ["acqua", "livello 16", "wartortle", "acqua", "livello 36", "blastoise", "acqua"],
+           "wartortle": ["squirtle"],
+           "blastoise": ["squirtle"]
+}
+
 
 def show(update: Update, context: CallbackContext) -> None:
-    types = update.message.text.split()
-    num_types = len(types) - 1
+    text = update.message.text.split()
+    num_types = len(text) - 1
 
     weakness_c = copy.deepcopy(weakness)
     resistence_c = copy.deepcopy(resistence)
     nullify_c = copy.deepcopy(nullify)
 
-    if types[0] == "/dr2" or types[0] == "/dr1":
+    if text[0] == "/dr2" or text[0] == "/dr1":
         weakness_c.pop("folletto", None)
         resistence_c.pop("folletto", None)
         nullify_c.pop("folletto", None)
@@ -115,10 +128,10 @@ def show(update: Update, context: CallbackContext) -> None:
                     else:
                         count += 1
 
-        if types[0] == "/dr2":
+        if text[0] == "/dr2":
             resistence_c["acciaio"].append("buio")
             resistence_c["acciaio"].append("spettro")
-        elif types[0] == "/dr1":
+        elif text[0] == "/dr1":
             weakness_c.pop("acciaio", None)
             resistence_c.pop("acciaio", None)
             nullify_c.pop("acciaio", None)
@@ -215,25 +228,25 @@ def show(update: Update, context: CallbackContext) -> None:
             nullify_c["psico"].append("spettro")
 
     if num_types == 1:
-        if weakness_c.__contains__(types[1].lower()):
-            update.message.reply_text(show_weakness(weakness_c, resistence_c, nullify_c, types[1].lower()))
-            update.message.reply_text(show_resistence(weakness_c, resistence_c, nullify_c, types[1].lower()))
+        if weakness_c.__contains__(text[1].lower()):
+            update.message.reply_text(show_weakness(weakness_c, resistence_c, nullify_c, text[1].lower()))
+            update.message.reply_text(show_resistence(weakness_c, resistence_c, nullify_c, text[1].lower()))
         else:
-            if ((types[0] == "/dr1" and (types[1].lower() == "buio" or types[1].lower() == "acciaio"
-                                         or types[1].lower() == "folletto")) or (
-                    types[0] == "/dr2" and types[1].lower() == "folletto")):
+            if ((text[0] == "/dr1" and (text[1].lower() == "buio" or text[1].lower() == "acciaio"
+                                         or text[1].lower() == "folletto")) or (
+                    text[0] == "/dr2" and text[1].lower() == "folletto")):
                 update.message.reply_text("Tipo non valido per questa Generazione. (Usa /help per vedere quale comando usare)")
             else:
                 update.message.reply_text("Tipo non valido")
     elif num_types == 2:
-        if weakness_c.__contains__(types[1].lower()) and weakness_c.__contains__(types[2].lower()):
-            update.message.reply_text(show_weakness(weakness_c, resistence_c, nullify_c, types[1].lower(), types[2].lower()))
-            update.message.reply_text(show_resistence(weakness_c, resistence_c, nullify_c, types[1].lower(), types[2].lower()))
+        if weakness_c.__contains__(text[1].lower()) and weakness_c.__contains__(text[2].lower()):
+            update.message.reply_text(show_weakness(weakness_c, resistence_c, nullify_c, text[1].lower(), text[2].lower()))
+            update.message.reply_text(show_resistence(weakness_c, resistence_c, nullify_c, text[1].lower(), text[2].lower()))
         else:
-            if ((types[0] == "/dr1" and (types[1].lower() == "buio" or types[1].lower() == "acciaio"
-                                       or types[1].lower() == "folletto" or types[2].lower() == "buio" or
-                                        types[2].lower() == "acciaio" or types[2].lower() == "folletto"))
-                    or (types[0] == "/dr2" and (types[1].lower() == "folletto" or types[2].lower() == "folletto"))):
+            if ((text[0] == "/dr1" and (text[1].lower() == "buio" or text[1].lower() == "acciaio"
+                                       or text[1].lower() == "folletto" or text[2].lower() == "buio" or
+                                        text[2].lower() == "acciaio" or text[2].lower() == "folletto"))
+                    or (text[0] == "/dr2" and (text[1].lower() == "folletto" or text[2].lower() == "folletto"))):
                 update.message.reply_text("Uno o entrambi i tipi non sono validi per questa Generazione. (Usa /help per vedere quale comando usare)")
             else:
                 update.message.reply_text("Uno o entrambi i tipi non sono validi")
@@ -317,6 +330,45 @@ def show_resistence(*args):
     return tot
 
 
+def info(update: Update, context: CallbackContext) -> None:
+    text = update.message.text.split()
+
+    if pokemon.__contains__(text[1].lower()):
+        update.message.reply_text(show_pokemon(text[1].lower()))
+    else:
+        update.message.reply_text("Pokémon non esistente o non ancora presente nel nostro Pokédex (WIP :D)")
+
+
+def show_pokemon(poke):
+    mex = "INFO SU " + poke.upper() + "   \^-^/ :\n"
+    count = 0
+
+    if len(pokemon[poke]) == 1:
+        mex += pokemon[poke][0] + " "
+        for i in pokemon[pokemon[poke][0]]:
+            if count == 0 or count == 3 or count == 6:
+                mex += "[" + i + "]\n"
+            elif count == 1 or count == 4:
+                mex += "**** " + i + " ****\n"
+            else:
+                mex += i + " "
+
+            count += 1
+    else:
+        mex += poke + " "
+        for i in pokemon[poke]:
+            if count == 0 or count == 3 or count == 6:
+                mex += "[" + i + "]\n"
+            elif count == 1 or count == 4:
+                mex += "**** " + i + " ****\n"
+            else:
+                mex += i + " "
+
+            count += 1
+
+    return mex
+
+
 def start(update: Update, context: CallbackContext) -> None:
     update.message.reply_text("Benvenut*! Il bot mostra Debolezze e Resistenze dei tipi Pokémon.\n"
                               "Digita il comando /dr seguito dal primo tipo "
@@ -325,7 +377,10 @@ def start(update: Update, context: CallbackContext) -> None:
                               "/dr folletto spettro\n\n"
                               "(/dr fa riferimento ai giochi dalla 6 Generazione in poi.\n"
                               "Utilizza /dr1 per i giochi di 1 Generazione.\n"
-                              "Utilizza /dr2 per i giochi della 2-5 Generazione.)")
+                              "Utilizza /dr2 per i giochi della 2-5 Generazione.)\n\n"
+                              "Il comando /info è in WIP. Ha la funzione di Pokédex \^-^/\n"
+                              "Esempi:\n/info bulbasaur\n"
+                              "/info charizard")
 
 
 def help(update: Update, context: CallbackContext) -> None:
@@ -335,7 +390,10 @@ def help(update: Update, context: CallbackContext) -> None:
                               "/dr folletto spettro\n\n"
                               "(/dr fa riferimento ai giochi dalla 6 Generazione in poi.\n"
                               "Utilizza /dr1 per i giochi di 1 Generazione.\n"
-                              "Utilizza /dr2 per i giochi della 2-5 Generazione.)")
+                              "Utilizza /dr2 per i giochi della 2-5 Generazione.)\n\n"
+                              "Il comando /info è in WIP. Ha la funzione di Pokédex \^-^/\n"
+                              "Esempi:\n/info bulbasaur\n"
+                              "/info charizard")
 
 
 def main() -> None:
@@ -347,6 +405,8 @@ def main() -> None:
     dispatcher.add_handler(CommandHandler("dr1", show))
     dispatcher.add_handler(CommandHandler("dr2", show))
     dispatcher.add_handler(CommandHandler("help", help))
+
+    dispatcher.add_handler(CommandHandler("info", info))
 
     updater.start_webhook(listen="0.0.0.0",
                           port=PORT,
