@@ -1,9 +1,257 @@
-bulbasaur erba-veleno livello-16 ivysaur erba-veleno livello-32 venusaur erba-veleno
-ivysaur bulbasaur
-venusaur bulbasaur
-charmander fuoco livello-16 charmeleon fuoco livello-36 charizard fuoco-volante
-charmeleon charmander
-charizard charmander
+bulbasaur erba/veleno livello-16 ivysaur erba/veleno livello-32 venusaur erba/veleno
+ivysaur -e bulbasaur
+venusaur -e bulbasaur
+charmander fuoco livello-16 charmeleon fuoco livello-36 charizard fuoco/volante
+charmeleon -e charmander
+charizard -e charmander
 squirtle acqua livello-16 wartortle acqua livello-36 blastoise acqua
-wartortle squirtle
-blastoise squirtle
+wartortle -e squirtle
+blastoise -e squirtle
+caterpie coleottero livello-7 metapod coleottero livello-10 butterfree coleottero/volante
+metapod -e caterpie
+butterfree -e caterpie
+weedle coleottero/veleno livello-7 kakuna coleottero/veleno livello-10 beedrill coleottero/veleno
+kakuna -e weedle
+beedrill -e weedle
+pidgey normale/volante livello-18 pidgeotto normale/volante livello-36 pidgeot normale/volante
+pidgeotto -e pidgey
+pidgeot -e pidgey
+rattata normale livello-20 raticate normale
+rattata(alola) buio/normale livello-20-durante-notte raticate(alola) buio/normale
+raticate -e rattata
+raticate(alola) -e rattata(alola)
+spearow normale/volante livello-20 fearow normale/volante
+fearow -e spearow
+ekans veleno livello-22 arbok veleno
+arbok -e ekans
+pikachu -e pichu
+pikachu(pre-2g) elettro pietratuono raichu elettro
+pikachu(alola) -e pichu(alola)
+raichu -e pichu
+raichu(pre-2g) -e pikachu(pre-2g)
+raichu(alola) -e pichu(alola)
+sandshrew terra livello-22 sandslash terra
+sandshrew(alola) ghiaccio/acciaio pietragelo sandslash(alola) ghiaccio/acciaio
+sandslash -e sandshrew
+sandslash(alola) -e sandshrew(alola)
+nidoran-f veleno livello-16 nidorina veleno pietralunare nidoqueen veleno/terra
+nidorina -e nidoran-f
+nidoqueen -e nidoran-f
+nidoran-m veleno livello-16 nidorino veleno pietralunare nidoking veleno/terra
+nidorino -e nidoran-m
+nidoking -e nidoran-m
+clefairy -e cleffa
+clefairy(pre-6g) -e cleffa(pre-6g)
+clefairy(pre-2g) normale pietralunare clefable(pre-2g) normale
+clefable -e cleffa
+clefable(pre-6g) -e cleffa(pre-6g)
+clefable(pre-2g) -e clefairy(pre-2g)
+vulpix fuoco pietrafocaia ninetales fuoco
+vulpix(alola) ghiaccio pietragelo ninetales(alola) ghiaccio/folletto
+ninetales -e vulpix
+ninetales(alola) -e vulpix(alola)
+jigglypuff -e igglybuff
+jigglypuff(pre-6g) -e igglybuff(pre-6g)
+jigglypuff(pre-2g) normale pietralunare wigglytuff(pre-2g) normale
+wigglytuff -e igglybuff
+wigglytuff(pre-6g) -e igglybuff(pre-6g)
+wigglytuff(pre-2g) -e jigglypuff(pre-2g)
+zubat veleno/volante livello-22 golbat veleno/volante aumento-di-livello-con-affetto-alto crobat veleno/volante
+golbat -e zubat
+crobat -e zubat
+oddish erba/veleno livello-21 gloom erba/veleno pietrafoglia vileplume erba/veleno
+gloom -e oddish
+vileplume -e oddish
+paras coleottero-erba livello-24 parasect coleottero-erba
+parasect -e paras
+venonat coleottero/veleno livello-31 venomoth coleottero/veleno
+venomoth -e venonat
+diglett terra livello-26 dugtrio terra
+diglett(alola) terra/acciaio livello-26 dugtrio(alola) terra/acciaio
+dugtrio -e diglett
+dugtrio(alola) -e diglett(alola)
+meowth normale livello-28 persian normale
+meowth(alola) buio livello-28 persian(alola) buio
+meowth(galar) acciaio livello-28 perrserker acciaio
+persian -e meowth
+persian(alola) -e meowth(alola)
+psyduck acqua livello-33 golduck acqua
+golduck -e psyduck
+mankey lotta livello-28 primeape lotta
+primeape -e mankey
+growlithe fuoco pietrafocaia arcanine fuoco
+growlithe(hisui) fuoco/roccia pietrafocaia arcanine(hisui) fuoco/roccia
+arcanine -e growlithe
+arcanine(hisui) -e growlithe(hisui)
+poliwag acqua livello-25 poliwhirl acqua pietraidrica poliwrath acqua/lotta -a scambio-con-roccia-di-re politoed acqua
+poliwag(pre-2g) acqua livello-25 poliwhirl(pre-2g) acqua pietraidrica poliwrath(pre-2g) acqua/lotta
+poliwhirl -e poliwag
+poliwhirl(pre-2g) -e poliwag(pre-2g)
+poliwrath -e poliwag
+poliwrath(pre-2g) -e poliwag(pre-2g)
+politoed -e poliwag
+abra psico livello-16 kadabra psico scambio alakazam psico
+kadabra -e abra
+alakazam -e abra
+machop lotta livello-28 machoke lotta scambio machamp lotta
+machoke -e machop
+machamp -e machop
+bellsprout erba/veleno livello-21 weepinbell erba/veleno pietrafoglia victreebel erba/veleno
+weepinbell -e bellsprout
+victreebel -e bellsprout
+tentacool acqua/veleno livello-30 tentacruel acqua/veleno
+tentacruel -e tentacool
+geodude roccia/terra livello-25 graveler roccia/terra scambio golem roccia/terra
+geodude(alola) roccia-elettro livello-25 graveler(alola) roccia-elettro scambio golem(alola) roccia-elettro
+graveler -e geodude
+graveler(alola) -e geodude(alola)
+golem -e geodude
+golem(alola) -e geodude(alola)
+ponyta fuoco livello-40 rapidash fuoco
+ponyta(galar) psico livello-40 rapidash(galar) fuoco/folletto
+rapidash -e ponyta
+rapidash(galar) -e ponyta(galar)
+slowpoke acqua/psico livello-37 slowbro acqua/psico -a scambio-con-roccia-di-re slowking acqua/psico
+slowpoke(pre-2g) acqua/psico livello-37 slowbro(pre-2g) acqua/psico
+slowpoke(galar) psico fascia-galarnoce slowbro(galar) veleno/psico -a corona-galarnoce slowking(galar) veleno/psico
+slowbro -e slowpoke
+slowbro(pre-2g) -e slowpoke(pre-2g)
+slowbro(galar) -e slowpoke(galar)
+slowking -e slowpoke
+slowking(galar) -e slowpoke(galar)
+magnemite elettro/acciaio livello-30 magneton elettro/acciaio pietratuono magnezone elettro/acciaio
+magnemite(pre-8g) elettro/acciaio livello-30 magneton(pre-8g) elettro/acciaio aumento-di-livello-in-campo-magnetico-speciale magnezone(pre-8g) elettro/acciaio
+magnemite(pre-4g) elettro/acciaio livello-30 magneton(pre-4g) elettro/acciaio
+magnemite(pre-2g) elettro livello-30 magneton(pre-2g) elettro
+magneton -e magnemite
+magneton(pre-8g) -e magnemite(pre-8g)
+magneton(pre-4g) -e magnemite(pre-4g)
+magneton(pre-2g) -e magnemite(pre-2g)
+magnezone -e magnemite
+magnezone(pre-8g) -e magnemite(pre-8g)
+magnezone(pre-4g) -e magnemite(pre-4g)
+magnezone(pre-2g) -e magnemite(pre-2g)
+farfetch'd normale/volante
+farfetch'd(galar) lotta inflitto-3-brutti-colpi-nel-corso-di-una-lotta sirfetch'd lotta
+doduo normale/volante livello-31 dodrio normale/volante
+dodrio -e doduo
+seel acqua livello-34 dewgong acqua/ghiaccio
+dewgong -e seel
+grimer veleno livello-38 muk veleno
+grimer(alola) veleno/buio livello-38 muk(alola) veleno/buio
+muk -e grimer
+muk(alola) -e grimer(alola)
+shellder acqua pietraidrica cloyster acqua/ghiaccio
+cloyster -e shellder
+gastly spettro/veleno livello-25 haunter spettro/veleno scambio gengar spettro/veleno
+haunter -e gastly
+gengar -e gastly
+onix roccia/terra scambio-con-metalcoperta steelix acciaio/terra
+onix(pre-2g) roccia/terra
+steelix -e onix
+drowzee psico livello-26 hypno psico
+hypno -e drowzee
+krabby acqua livello-28 kingler acqua
+kingler -e krabby
+voltorb elettro livello-30 electrode elettro
+voltorb(hisui) elettro-erba livello-30 electrode(hisui) elettro-erba
+electrode -e voltorb
+electrode(hisui) -e voltorb(hisui)
+exeggcute erba/psico pietrafoglia exeggutor erba/psico
+exeggcute(alola) erba/psico pietrafoglia exeggutor(alola) erba/drago
+exeggutor -e exeggcute
+exeggutor(alola) -e exeggcute(alola)
+cubone terra livello-28 marowak terra
+cubone(alola) terra livello-28-durante-notte marowak(alola) fuoco/spettro
+marowak -e cubone
+marowak(alola) -e cubone(alola)
+hitmonlee -e tyrogue
+hitmonlee(pre-2g) lotta
+hitmonchan -e tyrogue
+hitmonchan(pre-2g) -e lotta
+lickitung normale aumento-di-livello-dopo-aver-appreso-rotolamento lickilicky normale
+lickitung(pre-4g) normale
+koffing veleno livello-35 weezing veleno
+koffing(galar) veleno livello-35 weezing(galar) veleno/folletto
+weezing -e koffing
+weezing(galar) -e koffing(galar)
+rhyorn terra/roccia livello-42 rhydon terra/roccia scambio-con-copertura rhyperior terra/roccia
+rhyorn(pre-4g) terra/roccia livello-42 rhydon(pre-4g)
+rhydon -e rhyorn
+rhydon(pre-4g) -e rhyorn(pre-4g)
+chansey -e happiny
+chansey(pre-4g) normale aumento-di-livello-con-alto-affetto blissey normale
+chansey(pre-2g) normale
+tangela erba aumento-di-livello-dopo-aver-appreso-forzantica tangrowth erba
+tangela(pre-4g) erba
+kangaskhan normale
+horsea acqua livello-32 seadra acqua scambio-con-squama-drago kingdra acqua/drago
+horsea(pre-2g) acqua livello-32 seadra(pre-2g) acqua
+seadra -e horsea
+seadra(pre-2g) -e horsea(pre-2g)
+goldeen acqua livello-33 seaking acqua
+seaking -e goldeen
+staryu acqua pietraidrica starmie acqua/psico
+starmie -e staryu
+mr.mime -e mime-jr.
+mr.mime(pre-6g) -e mime-jr.(pre-6g)
+mr.mime(pre-4g) psico
+mr.mime(galar) -e mime-jr.(galar)
+scyther coleottero/volante scambio-con-metalcoperta scizor coleottero/acciaio
+scyther(pre-2g) coleottero/volante
+scizor -e scyther
+jynx -e smoochum
+jynx(pre-2g) ghiaccio/psico
+electabuzz -e elekid
+electabuzz(pre-4g) -e elekid(pre-4g)
+electabuzz(pre-2g) -e elettro
+magmar -e magby
+magmar(pre-4g) -e magby(pre.4g)
+magmar(pre-2g) fuoco
+pinsir coleottero
+tauros normale
+magikarp acqua livello-20 gyarados acqua/volante
+gyarados -e magikarp
+lapras acqua/ghiaccio
+ditto normale
+eevee normale pietraidrica vaporeon acqua -a pietratuono jolteon elettro -a pietrafocaia flareon fuoco -a alto-affetto-e-aumento-di-livello-durante-giorno espeon psico -a alto-affetto-e-aumento-di-livello-durante-notte umbreon buio -a pietrafoglia leafon erba -a pietragelo glaceon ghiaccio -a alto-affetto-e-aumento-di-livello-dopo-aver-appreso-una-mossa-folletto sylveon folletto
+eevee(pre-8g) normale pietraidrica vaporeon(pre-8g) acqua -a pietratuono jolteon(pre-8g) elettro -a pietrafocaia flareon(pre-8g) fuoco -a alto-affetto-e-aumento-di-livello-durante-giorno espeon(pre-8g) psico -a alto-affetto-e-aumento-di-livello-durante-notte umbreon(pre-8g) buio -a aumento-di-livello-presso-roccia-muschio leafon(pre-8g) erba -a aumento-di-livello-presso-roccia-ghiaccio glaceon(pre-8g) ghiaccio -a alto/affetto-e/aumento/di/livello-dopo/aver/appreso/una/mossa/folletto sylveon(pre-8g) folletto
+eevee(pre-6g) normale pietraidrica vaporeon(pre-6g) acqua -a pietratuono jolteon(pre-6g) elettro -a pietrafocaia flareon(pre-6g) fuoco -a alto-affetto-e-aumento-di-livello-durante-giorno espeon(pre-6g) psico -a alto-affetto-e-aumento-di-livello-durante-notte umbreon(pre-6g) buio -a aumento-di-livello-presso-roccia-muschio leafon(pre-6g) erba -a aumento-di-livello-presso-roccia-ghiaccio glaceon(pre-6g) ghiaccio
+eevee(pre-4g) normale pietraidrica vaporeon(pre-4g) acqua -a pietratuono jolteon(pre-4g) elettro -a pietrafocaia flareon(pre-4g) fuoco -a alto-affetto-e-aumento-di-livello-durante-giorno espeon(pre-4g) psico -a alto-affetto-e-aumento-di-livello-durante-notte umbreon(pre-4g) buio
+eevee(pre-2g) normale pietraidrica vaporeon(pre-2g) acqua -a pietratuono jolteon(pre-2g) elettro -a pietrafocaia flareon(pre-2g) fuoco
+vaporeon -e eevee
+vaporeon(pre-8g) -e eevee(pre-8g)
+vaporeon(pre-6g) -e eevee(pre-6g)
+vaporeon(pre-4g) -e eevee(pre-4g)
+vaporeon(pre-2g) -e eevee(pre-2g)
+jolteon -e eevee
+jolteon(pre-8g) -e eevee(pre-8g)
+jolteon(pre-6g) -e eevee(pre-6g)
+jolteon(pre-4g) -e eevee(pre-4g)
+jolteon(pre-2g) -e eevee(pre-2g)
+flareon -e eevee
+flareon(pre-8g) -e eevee(pre-8g)
+flareon(pre-6g) -e eevee(pre-6g)
+flareon(pre-4g) -e eevee(pre-4g)
+flareon(pre-2g) -e eevee(pre-2g)
+porygon normale scambio-con-upgrade porygon2 normale scambio-con-dubbiodisco porygon-z normale
+porygon(pre-4g) normale scambio-con-upgrade porygon2(pre-4g) normale
+porygon(pre-2g) normale
+omanyte roccia/acqua livello-40 omastar roccia/acqua
+omastar -e omanyte
+kabuto roccia/acqua livello-40 kabutops roccia/acqua
+kabutops -e kabuto
+aerodactyl roccia/volante
+snorlax -e munchlax
+snorlax(pre-4g) normale
+articuno ghiaccio/volante
+articuno(galar) psico/volante
+zapdos elettro/volante
+zapdos(galar) lotta/volante
+moltres fuoco/volante
+moltres(galar) buio/volante
+dratini drago livello-30 dragonair drago livello-55 dragonite drago/volante
+dragonair -e dratini
+dragonite -e dratini
+mewtwo psico
+mew psico

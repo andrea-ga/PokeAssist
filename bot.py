@@ -281,37 +281,88 @@ def info(update: Update, context: CallbackContext):
         update.message.reply_text("Il comando deve essere seguito dal nome del Pokémon.")
     else:
         if pokebase.__contains__(text[1].lower()):
-            update.message.reply_text(show_pokemon(text[1].lower()))
+            update.message.reply_html(show_pokemon(text[1].lower()))
+
+            if pokebase.__contains__(text[1].lower() + "(alola)"):
+                update.message.reply_html(show_pokemon(text[1].lower() + "(alola)"))
+            if pokebase.__contains__(text[1].lower() + "(galar)"):
+                update.message.reply_html(show_pokemon(text[1].lower() + "(galar)"))
+            if pokebase.__contains__(text[1].lower() + "(hisui)"):
+                update.message.reply_html(show_pokemon(text[1].lower() + "(hisui)"))
+
+            if pokebase.__contains__(text[1].lower() + "(pre-8g)"):
+                update.message.reply_html("TIPI/EVOLUZIONI VALIDI PER GENERAZIONI PRECEDENTI LA 8\n\n" + show_pokemon(text[1].lower() + "(pre-8g)"))
+            if pokebase.__contains__(text[1].lower() + "(pre-6g)"):
+                update.message.reply_html("TIPI/EVOLUZIONI VALIDI PER GENERAZIONI PRECEDENTI LA 6\n\n" + show_pokemon(text[1].lower() + "(pre-6g)"))
+            if pokebase.__contains__(text[1].lower() + "(pre-4g)"):
+                update.message.reply_html("TIPI/EVOLUZIONI VALIDI PER GENERAZIONI PRECEDENTI LA 4\n\n" + show_pokemon(text[1].lower() + "(pre-4g)"))
+            if pokebase.__contains__(text[1].lower() + "(pre-2g)"):
+                update.message.reply_html("TIPI/EVOLUZIONI VALIDI PER GENERAZIONI PRECEDENTI LA 2\n\n" + show_pokemon(text[1].lower() + "(pre-2g)"))
         else:
             update.message.reply_text("Pokémon non esistente o non ancora presente nel nostro Pokédex (WIP :D)")
 
 
+def delsubstring(s):
+    ns = s
+    pos = s.find("(pre")
+
+    if pos != -1:
+        ns = s[:pos]
+
+    return ns
+
+
 def show_pokemon(poke):
-    mex = "INFO SU " + poke.upper() + "   \^-^/ :\n"
-    count = 0
+    mex = "<u>INFO SU <b>" + delsubstring(poke).upper() + "</b>   \^-^/ :</u>\n"
+    pos = 0
 
-    if len(pokebase[poke]) == 1:
-        mex += pokebase[poke][0] + " "
-        for i in pokebase[pokebase[poke][0]]:
-            if count == 0 or count == 3 or count == 6:
-                mex += "[" + i + "]\n"
-            elif count == 1 or count == 4:
-                mex += "**** " + i + " ****\n"
-            else:
-                mex += i + " "
+    if pokebase[poke][0] == "-e":
+        if pokebase.__contains__(pokebase[poke][1]):
+            mex += delsubstring(pokebase[poke][1]) + " "
+            for i in pokebase[pokebase[poke][1]]:
+                if i == "-e":
+                    continue
 
-            count += 1
+                if i == "-a":
+                    mex += "------ oppure ------\n"
+                    continue
+
+                if pos == 0:
+                    mex += "[" + i + "]\n"
+                    pos = 1
+                elif pos == 1:
+                    mex += "<i>**** " + i + " ****</i>\n"
+                    pos = 2
+                elif pos == 2:
+                    if i == poke:
+                        mex += "<b>" + delsubstring(i) + "</b> "
+                    else:
+                        mex += delsubstring(i) + " "
+                    pos = 0
+        else:
+            mex += "WIP"
     else:
-        mex += poke + " "
+        mex += delsubstring(poke) + " "
         for i in pokebase[poke]:
-            if count == 0 or count == 3 or count == 6:
-                mex += "[" + i + "]\n"
-            elif count == 1 or count == 4:
-                mex += "**** " + i + " ****\n"
-            else:
-                mex += i + " "
+            if i == "-e":
+                continue
 
-            count += 1
+            if i == "-a":
+                mex += "------ oppure ------\n"
+                continue
+
+            if pos == 0:
+                mex += "[" + i + "]\n"
+                pos = 1
+            elif pos == 1:
+                mex += "<i>**** " + i + " ****</i>\n"
+                pos = 2
+            elif pos == 2:
+                if i == poke:
+                    mex += "<b>" + delsubstring(i) + "</b> "
+                else:
+                    mex += delsubstring(i) + " "
+                pos = 0
 
     return mex
 
@@ -323,30 +374,38 @@ def start(update: Update, context: CallbackContext):
     if not pokebase:
         read_pokebase()
 
-    update.message.reply_text("Benvenut*! Il bot mostra Debolezze e Resistenze dei tipi Pokémon.\n"
-                              "Digita il comando /dr seguito dal primo tipo "
-                              "ed eventualmente secondo tipo.\n"
-                              "Esempi:\n/dr fuoco\n"
-                              "/dr folletto spettro\n\n"
-                              "(/dr fa riferimento ai giochi dalla 6 Generazione in poi.\n"
-                              "Utilizza /dr1 per i giochi di 1 Generazione.\n"
-                              "Utilizza /dr2 per i giochi della 2-5 Generazione.)\n\n"
-                              "Il comando /info è in WIP. Ha la funzione di Pokédex \^-^/\n"
-                              "Esempi:\n/info bulbasaur\n"
-                              "/info charizard")
+    update.message.reply_html("Benvenut*! Questi sono i comandi del bot:\n"
+                              "<u><b>Mostrare Debolezze e Resistenze di un Tipo:</b></u>\n"
+                              "<code>/dr tipo1 [tipo2]</code> <i>Valido da Generazione 6 in poi</i>\n"
+                              "<code>/dr2 tipo1 [tipo2]</code> <i>Valido per Generazioni 2-5</i>\n"
+                              "<code>/dr1 tipo1 [tipo2]</code> <i>Valido solo per Generazione 1</i>\n"
+                              "Esempi:\n"
+                              "<code>/dr fuoco</code>\n"
+                              "<code>/dr folletto spettro</code>\n"
+                              "<code>/dr1 coleottero</code>\n"
+                              "<u><b>Mostrare Tipi ed Evoluzioni di un Pokémon\n"
+                              "(WIP: al momento è presente solo la Generazione 1):</b></u>\n"
+                              "<code>/info nomePokémon</code>\n"
+                              "Esempi:\n"
+                              "<code>/info bulbasaur</code>\n"
+                              "<code>/info charizard</code>")
 
 
 def help(update: Update, context: CallbackContext):
-    update.message.reply_text("Digita il comando /dr seguito dal primo tipo "
-                              "ed eventualmente secondo tipo.\n"
-                              "Esempi:\n/dr fuoco\n"
-                              "/dr folletto spettro\n\n"
-                              "(/dr fa riferimento ai giochi dalla 6 Generazione in poi.\n"
-                              "Utilizza /dr1 per i giochi di 1 Generazione.\n"
-                              "Utilizza /dr2 per i giochi della 2-5 Generazione.)\n\n"
-                              "Il comando /info è in WIP. Ha la funzione di Pokédex \^-^/\n"
-                              "Esempi:\n/info bulbasaur\n"
-                              "/info charizard")
+    update.message.reply_html("<u><b>Mostrare Debolezze e Resistenze di un Tipo:</b></u>\n"
+                              "<code>/dr tipo1 [tipo2]</code> <i>Valido da Generazione 6 in poi</i>\n"
+                              "<code>/dr2 tipo1 [tipo2]</code> <i>Valido per Generazioni 2-5</i>\n"
+                              "<code>/dr1 tipo1 [tipo2]</code> <i>Valido solo per Generazione 1</i>\n"
+                              "Esempi:\n"
+                              "<code>/dr fuoco</code>\n"
+                              "<code>/dr folletto spettro</code>\n"
+                              "<code>/dr1 coleottero</code>\n"
+                              "<u><b>Mostrare Tipi ed Evoluzioni di un Pokémon\n"
+                              "(WIP: al momento è presente solo la Generazione 1):</b></u>\n"
+                              "<code>/info nomePokémon</code>\n"
+                              "Esempi:\n"
+                              "<code>/info bulbasaur</code>\n"
+                              "<code>/info charizard</code>")
 
 
 def read_typechart():
