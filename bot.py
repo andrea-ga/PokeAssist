@@ -170,8 +170,8 @@ def show(update: Update, context: CallbackContext):
 
     if num_types == 1:
         if weakness_c.__contains__(text[1].lower()):
-            update.message.reply_text(show_weakness(weakness_c, strength_c, nullify_c, text[1].lower()))
-            update.message.reply_text(show_resistence(weakness_c, strength_c, nullify_c, text[1].lower()))
+            update.message.reply_html(show_weakness(weakness_c, strength_c, nullify_c, text[1].lower()))
+            update.message.reply_html(show_resistence(weakness_c, strength_c, nullify_c, text[1].lower()))
         else:
             if ((text[0] == "/dr1" and (text[1].lower() == "buio" or text[1].lower() == "acciaio"
                                          or text[1].lower() == "folletto")) or (
@@ -181,8 +181,8 @@ def show(update: Update, context: CallbackContext):
                 update.message.reply_text("Tipo non valido")
     elif num_types == 2:
         if weakness_c.__contains__(text[1].lower()) and weakness_c.__contains__(text[2].lower()):
-            update.message.reply_text(show_weakness(weakness_c, strength_c, nullify_c, text[1].lower(), text[2].lower()))
-            update.message.reply_text(show_resistence(weakness_c, strength_c, nullify_c, text[1].lower(), text[2].lower()))
+            update.message.reply_html(show_weakness(weakness_c, strength_c, nullify_c, text[1].lower(), text[2].lower()))
+            update.message.reply_html(show_resistence(weakness_c, strength_c, nullify_c, text[1].lower(), text[2].lower()))
         else:
             if ((text[0] == "/dr1" and (text[1].lower() == "buio" or text[1].lower() == "acciaio"
                                        or text[1].lower() == "folletto" or text[2].lower() == "buio" or
@@ -196,7 +196,7 @@ def show(update: Update, context: CallbackContext):
 
 
 def show_weakness(*args):
-    tot = "DEBOLEZZE:\n"
+    tot = "<u><b>DEBOLEZZE:</b></u>\n"
     #print(*args)
 
     amount = {}
@@ -231,7 +231,7 @@ def show_weakness(*args):
 
 
 def show_resistence(*args):
-    tot = "RESISTENZE:\n"
+    tot = "<u><b>RESISTENZE:</b></u>\n"
     #print(*args)
 
     amount = {}
@@ -291,13 +291,13 @@ def info(update: Update, context: CallbackContext):
                 update.message.reply_html(show_pokemon(text[1].lower() + "(hisui)"))
 
             if pokebase.__contains__(text[1].lower() + "(pre-8g)"):
-                update.message.reply_html("TIPI/EVOLUZIONI VALIDI PER GENERAZIONI PRECEDENTI LA 8\n\n" + show_pokemon(text[1].lower() + "(pre-8g)"))
+                update.message.reply_html("<u>PER GENERAZIONI PRECEDENTI LA 8</u>\n\n" + show_pokemon(text[1].lower() + "(pre-8g)"))
             if pokebase.__contains__(text[1].lower() + "(pre-6g)"):
-                update.message.reply_html("TIPI/EVOLUZIONI VALIDI PER GENERAZIONI PRECEDENTI LA 6\n\n" + show_pokemon(text[1].lower() + "(pre-6g)"))
+                update.message.reply_html("<u>PER GENERAZIONI PRECEDENTI LA 6</u>\n\n" + show_pokemon(text[1].lower() + "(pre-6g)"))
             if pokebase.__contains__(text[1].lower() + "(pre-4g)"):
-                update.message.reply_html("TIPI/EVOLUZIONI VALIDI PER GENERAZIONI PRECEDENTI LA 4\n\n" + show_pokemon(text[1].lower() + "(pre-4g)"))
+                update.message.reply_html("<u>PER GENERAZIONI PRECEDENTI LA 4</u>\n\n" + show_pokemon(text[1].lower() + "(pre-4g)"))
             if pokebase.__contains__(text[1].lower() + "(pre-2g)"):
-                update.message.reply_html("TIPI/EVOLUZIONI VALIDI PER GENERAZIONI PRECEDENTI LA 2\n\n" + show_pokemon(text[1].lower() + "(pre-2g)"))
+                update.message.reply_html("<u>PER GENERAZIONI PRECEDENTI LA 2</u>\n\n" + show_pokemon(text[1].lower() + "(pre-2g)"))
         else:
             update.message.reply_text("Pokémon non esistente o non ancora presente nel nostro Pokédex (WIP :D)")
 
@@ -313,56 +313,77 @@ def delsubstring(s):
 
 
 def show_pokemon(poke):
-    mex = "<u>INFO SU <b>" + delsubstring(poke).upper() + "</b>   \^-^/ :</u>\n"
+    mex = "INFO SU <b>" + delsubstring(poke).upper() + "</b>\t" \
+                                                       "\t\t\t\^-^/ :\n"
     pos = 0
+    num_tab = 1
 
     if pokebase[poke][0] == "-e":
         if pokebase.__contains__(pokebase[poke][1]):
-            mex += delsubstring(pokebase[poke][1]) + " "
+            mex += "<u>" + delsubstring(pokebase[poke][1]) + "</u> "
             for i in pokebase[pokebase[poke][1]]:
                 if i == "-e":
                     continue
 
                 if i == "-a":
-                    mex += "------ oppure ------\n"
+                    num_tab -= 1
+                    for n in range(num_tab):
+                        mex += "\t\t"
+
+                    mex += "<i>------ oppure ------</i>\n"
                     continue
 
                 if pos == 0:
                     mex += "[" + i + "]\n"
                     pos = 1
                 elif pos == 1:
-                    mex += "<i>**** " + i + " ****</i>\n"
+                    for n in range(num_tab):
+                        mex += "\t\t"
+
+                    mex += "<i>**** " + i.replace("-", " ") + " ****</i>\n"
                     pos = 2
                 elif pos == 2:
+                    for n in range(num_tab):
+                        mex += "\t\t"
+
                     if i == poke:
-                        mex += "<b>" + delsubstring(i) + "</b> "
+                        mex += "<b><u>" + delsubstring(i) + "</u></b> "
                     else:
-                        mex += delsubstring(i) + " "
+                        mex += "<u>" + delsubstring(i) + "</u> "
                     pos = 0
+                    num_tab += 1
         else:
             mex += "WIP"
     else:
-        mex += delsubstring(poke) + " "
+        mex += "<b><u>" + delsubstring(poke) + "</u></b> "
         for i in pokebase[poke]:
             if i == "-e":
                 continue
 
             if i == "-a":
-                mex += "------ oppure ------\n"
+                num_tab -= 1
+                for n in range(num_tab):
+                    mex += "\t\t"
+
+                mex += "<i>------ oppure ------</i>\n"
                 continue
 
             if pos == 0:
                 mex += "[" + i + "]\n"
                 pos = 1
             elif pos == 1:
-                mex += "<i>**** " + i + " ****</i>\n"
+                for n in range(num_tab):
+                    mex += "\t\t"
+
+                mex += "<i>**** " + i.replace("-", " ") + " ****</i>\n"
                 pos = 2
             elif pos == 2:
-                if i == poke:
-                    mex += "<b>" + delsubstring(i) + "</b> "
-                else:
-                    mex += delsubstring(i) + " "
+                for n in range(num_tab):
+                    mex += "\t\t"
+
+                mex += "<u>" + delsubstring(i) + "</u> "
                 pos = 0
+                num_tab += 1
 
     return mex
 
@@ -375,10 +396,10 @@ def start(update: Update, context: CallbackContext):
         read_pokebase()
 
     update.message.reply_html("Benvenut*! Questi sono i comandi del bot:\n"
-                              "<u><b>Mostrare Debolezze e Resistenze di un Tipo:</b></u>\n"
-                              "<code>/dr tipo1 [tipo2]</code> <i>Valido da Generazione 6 in poi</i>\n"
-                              "<code>/dr2 tipo1 [tipo2]</code> <i>Valido per Generazioni 2-5</i>\n"
-                              "<code>/dr1 tipo1 [tipo2]</code> <i>Valido solo per Generazione 1</i>\n"
+                              "<u><b>Mostrare Debolezze e Resistenze dei Tipi:</b></u>\n"
+                              "<code>/dr tipo1 [tipo2]</code> <i> Per Generazioni 6+</i>\n"
+                              "<code>/dr2 tipo1 [tipo2]</code> <i>Per Generazioni 2-5</i>\n"
+                              "<code>/dr1 tipo1 [tipo2]</code> <i>Per Generazione 1</i>\n"
                               "Esempi:\n"
                               "<code>/dr fuoco</code>\n"
                               "<code>/dr folletto spettro</code>\n"
@@ -392,10 +413,10 @@ def start(update: Update, context: CallbackContext):
 
 
 def help(update: Update, context: CallbackContext):
-    update.message.reply_html("<u><b>Mostrare Debolezze e Resistenze di un Tipo:</b></u>\n"
-                              "<code>/dr tipo1 [tipo2]</code> <i>Valido da Generazione 6 in poi</i>\n"
-                              "<code>/dr2 tipo1 [tipo2]</code> <i>Valido per Generazioni 2-5</i>\n"
-                              "<code>/dr1 tipo1 [tipo2]</code> <i>Valido solo per Generazione 1</i>\n"
+    update.message.reply_html("<u><b>Mostrare Debolezze e Resistenze dei Tipi:</b></u>\n"
+                              "<code>/dr tipo1 [tipo2]</code> <i> Per Generazioni 6+</i>\n"
+                              "<code>/dr2 tipo1 [tipo2]</code> <i>Per Generazioni 2-5</i>\n"
+                              "<code>/dr1 tipo1 [tipo2]</code> <i>Per Generazione 1</i>\n"
                               "Esempi:\n"
                               "<code>/dr fuoco</code>\n"
                               "<code>/dr folletto spettro</code>\n"

@@ -25,7 +25,7 @@ fearow -e spearow
 ekans veleno livello-22 arbok veleno
 arbok -e ekans
 pikachu -e pichu
-pikachu(pre-2g) elettro pietratuono raichu elettro
+pikachu(pre-2g) elettro pietratuono raichu(pre-2g) elettro
 pikachu(alola) -e pichu(alola)
 raichu -e pichu
 raichu(pre-2g) -e pikachu(pre-2g)
