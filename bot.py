@@ -489,11 +489,10 @@ def main():
     dispatcher = updater.dispatcher
 
     dispatcher.add_handler(CommandHandler("start", start))
+    dispatcher.add_handler(CommandHandler("help", help))
     dispatcher.add_handler(CommandHandler("dr", show))
     dispatcher.add_handler(CommandHandler("dr1", show))
     dispatcher.add_handler(CommandHandler("dr2", show))
-    dispatcher.add_handler(CommandHandler("help", help))
-
     dispatcher.add_handler(CommandHandler("info", info))
 
     updater.start_webhook(listen="0.0.0.0",
