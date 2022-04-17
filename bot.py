@@ -25,7 +25,7 @@ pokebase = {}
 
 def show(update: Update, context: CallbackContext):
     if not weakness or not strength or not nullify:
-        read_typechart()
+        read_type_chart()
 
     text = update.message.text.split()
     num_types = len(text) - 1
@@ -176,7 +176,8 @@ def show(update: Update, context: CallbackContext):
             if ((text[0] == "/dr1" and (text[1].lower() == "buio" or text[1].lower() == "acciaio"
                                          or text[1].lower() == "folletto")) or (
                     text[0] == "/dr2" and text[1].lower() == "folletto")):
-                update.message.reply_text("Tipo non valido per questa Generazione. (Usa /help per vedere quale comando usare)")
+                update.message.reply_text("Tipo non valido per questa Generazione. "
+                                          "(Usa /help per vedere quale comando usare)")
             else:
                 update.message.reply_text("Tipo non valido")
     elif num_types == 2:
@@ -188,7 +189,8 @@ def show(update: Update, context: CallbackContext):
                                        or text[1].lower() == "folletto" or text[2].lower() == "buio" or
                                         text[2].lower() == "acciaio" or text[2].lower() == "folletto"))
                     or (text[0] == "/dr2" and (text[1].lower() == "folletto" or text[2].lower() == "folletto"))):
-                update.message.reply_text("Uno o entrambi i tipi non sono validi per questa Generazione. (Usa /help per vedere quale comando usare)")
+                update.message.reply_text("Uno o entrambi i tipi non sono validi per questa Generazione. "
+                                          "(Usa /help per vedere quale comando usare)")
             else:
                 update.message.reply_text("Uno o entrambi i tipi non sono validi")
     else:
@@ -388,16 +390,77 @@ def show_pokemon(poke):
     return mex
 
 
+def show_all_pokemon(update: Update, context: CallbackContext):
+    if not pokebase:
+        read_pokebase()
+
+    mex = "<b><u>DATABASE</u></b>\n"
+    number = 1
+
+    for p in pokebase:
+        if p.find("(pre") == -1 and p.find("(alola)") == -1 and p.find("(galar)") == -1 and p.find("(hisui)") == -1:
+            mex += f"{number}. " + p + " "
+            number += 1
+
+            if pokebase[p][0] != "-e":
+                mex += "[" + pokebase[p][0] + "]\n"
+                continue
+            else:
+                s = ""
+
+                if pokebase.__contains__(pokebase[p][1]):
+                    s = pokebase[p][1]
+                else:
+                    if pokebase.__contains__(p + "(pre-2g)"):
+                        p += "(pre-2g)"
+                        if pokebase[p][0] != "-e":
+                            mex += "[" + pokebase[p][0] + "]\n"
+                            continue
+                        else:
+                            s = pokebase[p][1]
+                    elif pokebase.__contains__(p + "(pre-4g)"):
+                        p += "(pre-4g)"
+                        if pokebase[p][0] != "-e":
+                            mex += "[" + pokebase[p][0] + "]\n"
+                            continue
+                        else:
+                            s = pokebase[p][1]
+                    elif pokebase.__contains__(p + "(pre-6g)"):
+                        p += "(pre-6g)"
+                        if pokebase[p][0] != "-e":
+                            mex += "[" + pokebase[p][0] + "]\n"
+                            continue
+                        else:
+                            s = pokebase[p][1]
+                    elif pokebase.__contains__(p + "(pre-8g)"):
+                        p += "(pre-8g)"
+                        if pokebase[p][0] != "-e":
+                            mex += "[" + pokebase[p][0] + "]\n"
+                            continue
+                        else:
+                            s = pokebase[p][1]
+
+                count = 0
+                for t in pokebase[s]:
+                    if t == p:
+                        mex += "[" + pokebase[s][count + 1] + "]\n"
+                        break
+                    else:
+                        count += 1
+
+    update.message.reply_html(mex)
+
+
 def start(update: Update, context: CallbackContext):
     if not weakness or not strength or not nullify:
-        read_typechart()
+        read_type_chart()
 
     if not pokebase:
         read_pokebase()
 
     update.message.reply_html("Benvenut*! Questi sono i comandi del bot:\n"
                               "<u><b>Mostrare Debolezze e Resistenze dei Tipi:</b></u>\n"
-                              "<code>/dr tipo1 [tipo2]</code> <i> Per Generazioni 6+</i>\n"
+                              "<code>/dr tipo1 [tipo2]</code>  <i>Per Generazioni 6+</i>\n"
                               "<code>/dr2 tipo1 [tipo2]</code> <i>Per Generazioni 2-5</i>\n"
                               "<code>/dr1 tipo1 [tipo2]</code> <i>Per Generazione 1</i>\n"
                               "Esempi:\n"
@@ -409,12 +472,15 @@ def start(update: Update, context: CallbackContext):
                               "<code>/info nomePokémon</code>\n"
                               "Esempi:\n"
                               "<code>/info bulbasaur</code>\n"
-                              "<code>/info charizard</code>")
+                              "<code>/info charizard</code>\n"
+                              "<u><b>Mostrare Nomi e Tipi di tutti i Pokémon\n"
+                              "(WIP: al momento è presente solo la Generazione 1):</b></u>\n"
+                              "<code>/all</code>")
 
 
 def help(update: Update, context: CallbackContext):
     update.message.reply_html("<u><b>Mostrare Debolezze e Resistenze dei Tipi:</b></u>\n"
-                              "<code>/dr tipo1 [tipo2]</code> <i> Per Generazioni 6+</i>\n"
+                              "<code>/dr tipo1 [tipo2]</code>  <i>Per Generazioni 6+</i>\n"
                               "<code>/dr2 tipo1 [tipo2]</code> <i>Per Generazioni 2-5</i>\n"
                               "<code>/dr1 tipo1 [tipo2]</code> <i>Per Generazione 1</i>\n"
                               "Esempi:\n"
@@ -426,10 +492,13 @@ def help(update: Update, context: CallbackContext):
                               "<code>/info nomePokémon</code>\n"
                               "Esempi:\n"
                               "<code>/info bulbasaur</code>\n"
-                              "<code>/info charizard</code>")
+                              "<code>/info charizard</code>\n"
+                              "<u><b>Mostrare Nomi e Tipi di tutti i Pokémon\n"
+                              "(WIP: al momento è presente solo la Generazione 1):</b></u>\n"
+                              "<code>/all</code>")
 
 
-def read_typechart():
+def read_type_chart():
     f = open("typeChart.txt", "r")
     count = 0
 
@@ -494,6 +563,7 @@ def main():
     dispatcher.add_handler(CommandHandler("dr1", show))
     dispatcher.add_handler(CommandHandler("dr2", show))
     dispatcher.add_handler(CommandHandler("info", info))
+    dispatcher.add_handler(CommandHandler("all", show_all_pokemon))
 
     updater.start_webhook(listen="0.0.0.0",
                           port=PORT,
