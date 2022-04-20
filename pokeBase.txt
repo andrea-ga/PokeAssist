@@ -108,7 +108,7 @@ graveler(alola) -e geodude(alola)
 golem -e geodude
 golem(alola) -e geodude(alola)
 ponyta fuoco livello-40 rapidash fuoco
-ponyta(galar) psico livello-40 rapidash(galar) fuoco/folletto
+ponyta(galar) psico livello-40 rapidash(galar) psico/folletto
 rapidash -e ponyta
 rapidash(galar) -e ponyta(galar)
 slowpoke acqua/psico livello-37 slowbro acqua/psico -a scambio-con-roccia-di-re slowking acqua/psico

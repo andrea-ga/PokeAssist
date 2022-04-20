@@ -390,7 +390,7 @@ def show_pokemon(poke):
     return mex
 
 
-def show_all_pokemon(update: Update, context: CallbackContext):
+def show_pokebase(update: Update, context: CallbackContext):
     if not pokebase:
         read_pokebase()
 
@@ -563,7 +563,7 @@ def main():
     dispatcher.add_handler(CommandHandler("dr1", show))
     dispatcher.add_handler(CommandHandler("dr2", show))
     dispatcher.add_handler(CommandHandler("info", info))
-    dispatcher.add_handler(CommandHandler("all", show_all_pokemon))
+    dispatcher.add_handler(CommandHandler("all", show_pokebase))
 
     updater.start_webhook(listen="0.0.0.0",
                           port=PORT,
