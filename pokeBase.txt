@@ -176,7 +176,7 @@ rhyorn(pre-4g) terra/roccia livello-42 rhydon(pre-4g)
 rhydon -e rhyorn
 rhydon(pre-4g) -e rhyorn(pre-4g)
 chansey -e happiny
-chansey(pre-4g) normale aumento-di-livello-con-alto-affetto blissey normale
+chansey(pre-4g) normale aumento-di-livello-con-alto-affetto blissey(pre-4g) normale
 chansey(pre-2g) normale
 tangela erba aumento-di-livello-dopo-aver-appreso-forzantica tangrowth erba
 tangela(pre-4g) erba
@@ -271,7 +271,7 @@ ledyba coleottero/volante livello-18 ledian coleottero/volante
 ledian -e ledyba
 spinarak coleottero/veleno livello-22 ariados coleottero/veleno
 ariados -e spinarak
-crobat -e golbat
+crobat -e zubat
 chinchou acqua/elettro livello-27 lanturn acqua/elettro
 lanturn -e chinchou
 pichu elettro alto-affetto-e-aumento-di-livello pikachu elettro pietratuono raichu elettro
@@ -291,7 +291,7 @@ xatu -e natu
 mareep elettro livello-15 flaaffy elettro livello-30 ampharos elettro
 flaaffy -e mareep
 ampharos -e mareep
-bellossom -e gloom
+bellossom -e oddish
 marill -e azurill
 marill(pre-6g) -e azurill(pre-6g)
 marill(pre-3g) acqua livello-18 azumarill(pre-3g) acqua

@@ -396,14 +396,14 @@ def show_pokebase(update: Update, context: CallbackContext):
     if not pokebase:
         read_pokebase()
 
-    mex = "<b><u>1 GENERAZIONE</u></b>\n"
+    mex = "<b><u>GENERAZIONE 1</u></b>\n"
     number = 1
 
     for p in pokebase:
         if p[0] == "-":
             gen = p[1]
             update.message.reply_html(mex)
-            mex = "<b><u>" + f"{gen}" + " GENERAZIONE</u></b>\n"
+            mex = "<b><u>" + "GENERAZIONE " + f"{gen}" + "</u></b>\n"
             continue
 
         if p.find("(pre") == -1 and p.find("(alola)") == -1 and p.find("(galar)") == -1 and p.find("(hisui)") == -1:
@@ -483,13 +483,13 @@ def start(update: Update, context: CallbackContext):
                               "<code>/dr folletto spettro</code>\n"
                               "<code>/dr1 coleottero</code>\n"
                               "<u><b>Mostrare Tipi ed Evoluzioni di un Pokémon\n"
-                              "(WIP: al momento sono presenti solo le Generazione 1 e 2):</b></u>\n"
+                              "(WIP: al momento sono presenti solo le Generazioni 1 e 2):</b></u>\n"
                               "<code>/info nomePokémon</code>\n"
                               "Esempi:\n"
                               "<code>/info bulbasaur</code>\n"
                               "<code>/info charizard</code>\n"
                               "<u><b>Mostrare Nomi e Tipi di tutti i Pokémon\n"
-                              "(WIP: al momento sono presenti solo le Generazione 1 e 2):</b></u>\n"
+                              "(WIP: al momento sono presenti solo le Generazioni 1 e 2):</b></u>\n"
                               "<code>/all</code>")
 
 
@@ -503,13 +503,13 @@ def help(update: Update, context: CallbackContext):
                               "<code>/dr folletto spettro</code>\n"
                               "<code>/dr1 coleottero</code>\n"
                               "<u><b>Mostrare Tipi ed Evoluzioni di un Pokémon\n"
-                              "(WIP: al momento sono presenti solo le Generazione 1 e 2):</b></u>\n"
+                              "(WIP: al momento sono presenti solo le Generazioni 1 e 2):</b></u>\n"
                               "<code>/info nomePokémon</code>\n"
                               "Esempi:\n"
                               "<code>/info bulbasaur</code>\n"
                               "<code>/info charizard</code>\n"
                               "<u><b>Mostrare Nomi e Tipi di tutti i Pokémon\n"
-                              "(WIP: al momento sono presenti solo le Generazione 1 e 2):</b></u>\n"
+                              "(WIP: al momento sono presenti solo le Generazioni 1 e 2):</b></u>\n"
                               "<code>/all</code>")
 
 
