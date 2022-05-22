@@ -298,6 +298,8 @@ def info(update: Update, context: CallbackContext):
                 update.message.reply_html("<u>PER GENERAZIONI PRECEDENTI LA 6</u>\n\n" + show_pokemon(text[1].lower() + "(pre-6g)"))
             if pokebase.__contains__(text[1].lower() + "(pre-4g)"):
                 update.message.reply_html("<u>PER GENERAZIONI PRECEDENTI LA 4</u>\n\n" + show_pokemon(text[1].lower() + "(pre-4g)"))
+            if pokebase.__contains__(text[1].lower() + "(pre-3g)"):
+                update.message.reply_html("<u>PER GENERAZIONI PRECEDENTI LA 3</u>\n\n" + show_pokemon(text[1].lower() + "(pre-3g)"))
             if pokebase.__contains__(text[1].lower() + "(pre-2g)"):
                 update.message.reply_html("<u>PER GENERAZIONI PRECEDENTI LA 2</u>\n\n" + show_pokemon(text[1].lower() + "(pre-2g)"))
         else:
@@ -394,10 +396,16 @@ def show_pokebase(update: Update, context: CallbackContext):
     if not pokebase:
         read_pokebase()
 
-    mex = "<b><u>DATABASE</u></b>\n"
+    mex = "<b><u>1 GENERAZIONE</u></b>\n"
     number = 1
 
     for p in pokebase:
+        if p[0] == "-":
+            gen = p[1]
+            update.message.reply_html(mex)
+            mex = "<b><u>" + f"{gen}" + " GENERAZIONE</u></b>\n"
+            continue
+
         if p.find("(pre") == -1 and p.find("(alola)") == -1 and p.find("(galar)") == -1 and p.find("(hisui)") == -1:
             mex += f"{number}. " + p + " "
             number += 1
@@ -413,6 +421,13 @@ def show_pokebase(update: Update, context: CallbackContext):
                 else:
                     if pokebase.__contains__(p + "(pre-2g)"):
                         p += "(pre-2g)"
+                        if pokebase[p][0] != "-e":
+                            mex += "[" + pokebase[p][0] + "]\n"
+                            continue
+                        else:
+                            s = pokebase[p][1]
+                    elif pokebase.__contains__(p + "(pre-3g)"):
+                        p += "(pre-3g)"
                         if pokebase[p][0] != "-e":
                             mex += "[" + pokebase[p][0] + "]\n"
                             continue

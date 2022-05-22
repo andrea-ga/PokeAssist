@@ -60,9 +60,12 @@ zubat veleno/volante livello-22 golbat veleno/volante aumento-di-livello-con-aff
 zubat(pre-2g) veleno/volante livello-22 golbat(pre-2g) veleno/volante
 golbat -e zubat
 golbat(pre-2g) -e zubat(pre-2g)
-oddish erba/veleno livello-21 gloom erba/veleno pietrafoglia vileplume erba/veleno
+oddish erba/veleno livello-21 gloom erba/veleno pietrafoglia vileplume erba/veleno -a pietrasolare bellossom erba
+oddish(pre-2g) erba/veleno livello-21 gloom(pre-2g) erba/veleno pietrafoglia vileplume(pre-2g) erba/veleno
 gloom -e oddish
+gloom(pre-2g) -e oddish(pre-2g)
 vileplume -e oddish
+vileplume(pre-2g) -e oddish(pre-2g)
 paras coleottero/erba livello-24 parasect coleottero/erba
 parasect -e paras
 venonat coleottero/veleno livello-31 venomoth coleottero/veleno
@@ -247,3 +250,151 @@ dragonair -e dratini
 dragonite -e dratini
 mewtwo psico
 mew psico
+-2
+chikorita erba livello-16 bayleef erba livello-32 meganium erba
+bayleef -e chikorita
+meganium -e chikorita
+cyndaquil fuoco livello-14 quilava fuoco livello-36 typhlosion fuoco
+cyndaquil(hisui) fuoco livello-17 quilava(hisui) fuoco livello-36 typhlosion(hisui) fuoco/spettro
+quilava -e cyndaquil
+quilava(hisui) -e cyndaquil(hisui)
+typhlosion -e cyndaquil
+typhlosion(hisui) -e cyndaquil(hisui)
+totodile acqua livello-18 croconaw acqua livello-30 feraligatr acqua
+croconaw -e totodile
+feraligatr -e totodile
+sentret normale livello-15 furret normale
+furret -e sentret
+hoothoot normale/volante livello-20 noctowl normale/volante
+noctowl -e hoothoot
+ledyba coleottero/volante livello-18 ledian coleottero/volante
+ledian -e ledyba
+spinarak coleottero/veleno livello-22 ariados coleottero/veleno
+ariados -e spinarak
+crobat -e golbat
+chinchou acqua/elettro livello-27 lanturn acqua/elettro
+lanturn -e chinchou
+pichu elettro alto-affetto-e-aumento-di-livello pikachu elettro pietratuono raichu elettro
+pichu(alola) elettro alto-affetto-e-aumento-di-livello pikachu(alola) elettro pietratuono raichu(alola) elettro/psico
+cleffa folletto alto-affetto-e-aumento-di-livello clefairy folletto pietralunare clefable folletto
+cleffa(pre-6g) normale alto-affetto-e-aumento-di-livello clefairy(pre-6g) normale pietralunare clefable(pre-6g) normale
+igglybuff normale/folletto alto-affetto-e-aumento-di-livello jigglypuff normale/folletto pietralunare wigglytuff normale/folletto
+igglybuff(pre-6g) normale alto-affetto-e-aumento-di-livello jigglypuff(pre-6g) normale pietralunare wigglytuff(pre-6g) normale
+togepi folletto alto-affetto-e-aumento-di-livello togetic folletto/volante pietrabrillo togekiss folletto/volante
+togepi(pre-6g) normale alto-affetto-e-aumento-di-livello togetic(pre-6g) normale/volante pietrabrillo togekiss normale/volante
+togepi(pre-4g) normale alto-affetto-e-aumento-di-livello togetic(pre-4g) normale/volante
+togetic -e togepi
+togetic(pre-6g) -e togepi(pre-6g)
+togetic(pre-4g) -e togepi(pre-4g)
+natu psico/volante livello-25 xatu psico-volante
+xatu -e natu
+mareep elettro livello-15 flaaffy elettro livello-30 ampharos elettro
+flaaffy -e mareep
+ampharos -e mareep
+bellossom -e gloom
+marill -e azurill
+marill(pre-6g) -e azurill(pre-6g)
+marill(pre-3g) acqua livello-18 azumarill(pre-3g) acqua
+azumarill -e azurill
+azumarill(pre-6g) -e azurill(pre-6g)
+azumarill(pre-3g) -e marill(pre-3g)
+sudowoodo -e bonsly
+sudowoodo(pre-4g) roccia
+politoed -e poliwag
+hoppip erba/volante livello-18 skiploom erba/volante livello-27 jumpluff erba/volante
+skiploom -e hoppip
+jumpluff -e hoppip
+aipom normale aumento-di-livello-dopo-aver-appreso-doppiosmash ambipom normale
+aipom(pre-4g) normale
+sunkern erba pietrasolare sunflora erba
+sunflora -e sunkern
+yanma coleottero/volante aumento-di-livello-dopo-aver-appreso-forzantica yanmega coleottero/volante
+yanma(pre-4g) coleottero/volante
+wooper acqua/terra livello-20 quagsire acqua/terra
+quagsire -e wooper
+espeon -e eevee
+espeon(pre-8g) -e eevee(pre-8g)
+espeon(pre-6g) -e eevee(pre-6g)
+espeon(pre-4g) -e eevee(pre-4g)
+umbreon -e eevee
+umbreon(pre-8g) -e eevee(pre-8g)
+umbreon(pre-6g) -e eevee(pre-6g)
+umbreon(pre-4g) -e eevee(pre-4g)
+murkrow buio/volante neropietra honchkrow buio/volante
+murkrow(pre-4g) buio/volante
+slowking -e slowpoke
+slowking(galar) -e slowpoke(galar)
+misdreavus spettro neropietra mismagius spettro
+misdreavus(pre-4g) spettro
+unown psico
+wobbuffet -e wynaut
+wobbuffet(pre-3g) psico
+girafarig normale/psico
+pineco coleottero livello-31 forretress coleottero/acciaio
+forretress -e pineco
+dunsparce normale
+gligar terra/volante aumento-di-livello-durante-la-notte-mentre-tiene-un-affilodente gliscor terra/volante
+gligar(pre-4g) terra/volante
+steelix -e onix
+snubbull folletto livello-23 granbull folletto
+snubbull(pre-6g) normale livello-23 granbull(pre-6g) normale
+granbull(pre-6g) -e snubbull(pre-6g)
+qwilfish acqua/veleno
+qwilfish(hisui) buio/veleno dopo-aver-usato-la-tecnica-potente-mille-fielespine-per-20-volte overqwil(hisui) buio/veleno
+overqwil(hisui) -e qwilfish(hisui)
+scizor -e scyther
+shuckle coleottero/roccia
+heracross coleottero/lotta
+sneasel buio/ghiaccio aumento-di-livello-durante-la-notte-mentre-tiene-un-affilartigli weavile buio/ghiaccio
+sneasel(pre-4g) buio/ghiaccio
+sneasel(hisui) lotta/veleno esposto-ad-un-affilartigli-di-giorno sneasler(hisui) lotta/veleno
+sneasler(hisui) -e sneasel(hisui)
+teddiursa normale livello-30 ursaring normale
+teddiursa(hisui) normale livello-30 ursaring(hisui) normale usando-un-blocco-di-torba-durante-una-notte-di-luna-piena ursaluna(hisui) terra/normale
+ursaring -e teddiursa
+ursaring(hisui) -e teddiursa(hisui)
+ursaluna(hisui) -e ursaluna(hisui)
+slugma fuoco livello-38 magcargo fuoco/roccia
+magcargo -e slugma
+swinub ghiaccio/terra livello-33 piloswine ghiaccio/terra dopo-aver-appreso-forzantica mamoswine ghiaccio/terra
+swinub(pre-4g) ghiaccio/terra livello-33 piloswine(pre-4g) ghiaccio/terra
+piloswine -e swinub
+piloswine(pre-4g) -e swinub(pre-4g)
+corsola acqua/roccia
+corsola(galar) spettro livello-38 cursola(galar) spettro
+remoraid acqua livello-25 octillery acqua
+octillery -e remoraid
+delibird ghiaccio/volante
+mantine -e mantyke
+mantine(pre-4g) acqua/volante
+skarmory acciaio/volante
+houndour buio/fuoco livello-24 houndoom buio/fuoco
+houndoom -e houndour
+kingdra -e horsea
+phanpy terra livello-25 donphan terra
+donphan -e phanpy
+porygon2 -e porygon
+porygon2(pre-4g) -e porygon(pre-4g)
+stantler normale
+stantler(hisui) normale dopo-aver-usato-la-tecnica-rapida-barrierassalto-per-20-volte wyrdeer(hisui) normale/psico
+wyrdeer(hisui) -e stantler(hisui)
+smeargle normale
+tyrogue lotta livello-20-con-attacco-maggiore-di-difesa hitmonlee lotta -a livello-20-con-difesa-maggiore-di-attacco hitmonchan lotta -a livello-20-con-attacco-uguale-alla-difesa hitmontop lotta
+hitmontop -e tyrogue
+smoochum ghiaccio/psico livello-30 jynx ghiaccio/psico
+elekid elettro livello-30 electabuzz elettro scambio-con-elettritore electivire elettro
+elekid(pre-4g) elettro livello-30 electabuzz(pre-4g) elettro
+magby fuoco livello-30 magmar fuoco scambio-con-magmatore magmortar fuoco
+magby(pre-4g) fuoco livello-30 magmar(pre-4g) fuoco
+miltank normale
+blissey -e happiny
+blissey(pre-4g) -e chansey(pre-4g)
+raikou elettro
+entei fuoco
+suicune acqua
+larvitar roccia/terra livello-30 pupitar roccia/terra livello-55 tyranitar roccia/buio
+pupitar -e larvitar
+tyranitar -e larvitar
+lugia psico/volante
+ho-oh fuoco/volante
+celebi psico/erba
