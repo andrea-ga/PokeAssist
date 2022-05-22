@@ -341,19 +341,16 @@ snubbull(pre-6g) normale livello-23 granbull(pre-6g) normale
 granbull(pre-6g) -e snubbull(pre-6g)
 qwilfish acqua/veleno
 qwilfish(hisui) buio/veleno dopo-aver-usato-la-tecnica-potente-mille-fielespine-per-20-volte overqwil buio/veleno
-overqwil -e qwilfish(hisui)
 scizor -e scyther
 shuckle coleottero/roccia
 heracross coleottero/lotta
 sneasel buio/ghiaccio aumento-di-livello-durante-la-notte-mentre-tiene-un-affilartigli weavile buio/ghiaccio
 sneasel(pre-4g) buio/ghiaccio
 sneasel(hisui) lotta/veleno esposto-ad-un-affilartigli-di-giorno sneasler lotta/veleno
-sneasler -e sneasel(hisui)
 teddiursa normale livello-30 ursaring normale
 teddiursa(hisui) normale livello-30 ursaring(hisui) normale usando-un-blocco-di-torba-durante-una-notte-di-luna-piena ursaluna terra/normale
 ursaring -e teddiursa
 ursaring(hisui) -e teddiursa(hisui)
-ursaluna -e teddiursa(hisui)
 slugma fuoco livello-38 magcargo fuoco/roccia
 magcargo -e slugma
 swinub ghiaccio/terra livello-33 piloswine ghiaccio/terra dopo-aver-appreso-forzantica mamoswine ghiaccio/terra
@@ -377,7 +374,6 @@ porygon2 -e porygon
 porygon2(pre-4g) -e porygon(pre-4g)
 stantler normale
 stantler(hisui) normale dopo-aver-usato-la-tecnica-rapida-barrierassalto-per-20-volte wyrdeer normale/psico
-wyrdeer -e stantler(hisui)
 smeargle normale
 tyrogue lotta livello-20-con-attacco-maggiore-di-difesa hitmonlee lotta -a livello-20-con-difesa-maggiore-di-attacco hitmonchan lotta -a livello-20-con-attacco-uguale-alla-difesa hitmontop lotta
 hitmontop -e tyrogue
