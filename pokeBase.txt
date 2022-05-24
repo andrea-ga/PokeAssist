@@ -338,6 +338,7 @@ gligar(pre-4g) terra/volante
 steelix -e onix
 snubbull folletto livello-23 granbull folletto
 snubbull(pre-6g) normale livello-23 granbull(pre-6g) normale
+granbull -e snubbull
 granbull(pre-6g) -e snubbull(pre-6g)
 qwilfish acqua/veleno
 qwilfish(hisui) buio/veleno dopo-aver-usato-la-tecnica-potente-mille-fielespine-per-20-volte overqwil buio/veleno
