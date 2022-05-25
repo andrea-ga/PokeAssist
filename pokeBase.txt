@@ -286,7 +286,7 @@ togepi(pre-4g) normale alto-affetto-e-aumento-di-livello togetic(pre-4g) normale
 togetic -e togepi
 togetic(pre-6g) -e togepi(pre-6g)
 togetic(pre-4g) -e togepi(pre-4g)
-natu psico/volante livello-25 xatu psico-volante
+natu psico/volante livello-25 xatu psico/volante
 xatu -e natu
 mareep elettro livello-15 flaaffy elettro livello-30 ampharos elettro
 flaaffy -e mareep
