@@ -339,6 +339,14 @@ def show_pokemon(poke):
                     mex += "<i>------ oppure ------</i>\n"
                     continue
 
+                if i == "-o":
+                    num_tab -= 1
+                    for n in range(num_tab):
+                        mex += "\t\t"
+
+                    mex += "<i>------ inoltre ------</i>\n"
+                    continue
+
                 if pos == 0:
                     mex += "[" + i + "]\n"
                     pos = 1
@@ -372,6 +380,14 @@ def show_pokemon(poke):
                     mex += "\t\t"
 
                 mex += "<i>------ oppure ------</i>\n"
+                continue
+
+            if i == "-o":
+                num_tab -= 1
+                for n in range(num_tab):
+                    mex += "\t\t"
+
+                mex += "<i>------ inoltre ------</i>\n"
                 continue
 
             if pos == 0:
@@ -492,13 +508,13 @@ def start(update: Update, context: CallbackContext):
                               "<code>/dr folletto spettro</code>\n"
                               "<code>/dr1 coleottero</code>\n"
                               "<u><b>Mostrare Tipi ed Evoluzioni di un Pokémon\n"
-                              "(WIP: al momento sono presenti solo le Generazioni 1,2 e 3):</b></u>\n"
+                              "(WIP: al momento sono presenti solo le Generazioni 1, 2 e 3):</b></u>\n"
                               "<code>/info nomePokémon</code>\n"
                               "Esempi:\n"
                               "<code>/info bulbasaur</code>\n"
                               "<code>/info charizard</code>\n"
                               "<u><b>Mostrare Nomi e Tipi di tutti i Pokémon\n"
-                              "(WIP: al momento sono presenti solo le Generazioni 1,2 e 3):</b></u>\n"
+                              "(WIP: al momento sono presenti solo le Generazioni 1, 2 e 3):</b></u>\n"
                               "<code>/all</code>")
 
 

@@ -442,8 +442,8 @@ breloom -e shroomish
 slakoth normale livello-18 vigoroth normale livello-36 slaking normale
 vigoroth -e slakoth
 slaking -e slakoth
-nincada coleottero/terra livello-20 ninjask coleottero/volante -a se-nella-squadra-del-giocatore-e'-presente-almeno-uno-spazio-libero-e-nella-borsa-e'-presente-almeno-una-poké-ball shedinja coleottero/spettro
-nincada(pre-4g) coleottero/terra livello-20 ninjask(pre-4g) coleottero/volante -a se-nella-squadra-del-giocatore-e'-presente-almeno-uno-spazio-libero shedinja(pre-4g) coleottero/spettro
+nincada coleottero/terra livello-20 ninjask coleottero/volante -o se-nella-squadra-del-giocatore-e'-presente-almeno-uno-spazio-libero-e-nella-borsa-e'-presente-almeno-una-poké-ball shedinja coleottero/spettro
+nincada(pre-4g) coleottero/terra livello-20 ninjask(pre-4g) coleottero/volante -o se-nella-squadra-del-giocatore-e'-presente-almeno-uno-spazio-libero shedinja(pre-4g) coleottero/spettro
 ninjask -e nincada
 ninjask(pre-4g) -e nincada(pre-4g)
 shedinja -e nincada
