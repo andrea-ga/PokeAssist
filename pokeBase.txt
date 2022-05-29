@@ -395,3 +395,161 @@ tyranitar -e larvitar
 lugia psico/volante
 ho-oh fuoco/volante
 celebi psico/erba
+-3
+treecko erba livello-16 grovyle erba livello-36 sceptile erba
+grovyle -e treecko
+sceptile -e treecko
+torchic fuoco livello-16 combusken fuoco/lotta livello-36 blaziken fuoco/lotta
+combusken -e torchic
+blaziken -e torchic
+mudkip acqua livello-16 marshtomp acqua/terra livello-36 swampert acqua/terra
+marshtomp -e mudkip
+swampert -e mudkip
+poochyena buio livello-18 mightyena buio
+mightyena -e poochyena
+zigzagoon normale livello-20 linoone normale
+zigzagoon(galar) buio/normale livello-20 linoone(galar) buio/normale livello-35-durante-la-notte obstagoon buio/normale
+linoone -e zigzagoon
+linoone(galar) -e zigzagoon(galar)
+wurmple coleottero livello-7-in-base-alla-personalita' silcoon coleottero -a livello-7-in-base-alla-personalita' cascoon coleottero livello-10-se-silcoon beautifly coleottero/volante -a livello-10-se-cascoon dustox coleottero/veleno
+silcoon -e wurmple
+beautifly -e wurmple
+cascoon -e wurmple
+dustox -e wurmple
+lotad acqua/erba livello-14 lombre acqua/erba pietraidrica ludicolo acqua/erba
+lombre -e lotad
+ludicolo -e lotad
+seedot erba livello-14 nuzleaf erba/buio pietrafoglia shiftry erba/buio
+nuzleaf -e seedot
+shiftry -e seedot
+taillow normale/volante livello-22 swellow normale/volante
+swellow -e taillow
+wingull acqua/volante livello-25 pelipper acqua/volante
+pelipper -e wingull
+ralts psico/folletto livello-20 kirlia psico/folletto livello-30 gardevoir psico/folletto -a pietralbore-se-maschio gallade psico/lotta
+ralts(pre-6g) psico livello-20 kirlia(pre-6g) psico livello-30 gardevoir(pre-6g) psico -a pietralbore-se-maschio gallade(pre-6g) psico/lotta
+ralts(pre-4g) psico livello-20 kirlia(pre-4g) psico livello-30 gardevoir(pre-4g) psico
+kirlia -e ralts
+kirlia(pre-6g) -e ralts(pre-6g)
+kirlia(pre-4g) -e ralts(pre-4g)
+gardevoir -e ralts
+gardevoir(pre-6g) -e ralts(pre-6g)
+gardevoir(pre-4g) -e ralts(pre-4g)
+surskit coleottero/acqua livello-22 masquerain coleottero/volante
+masquerain -e surskit
+shroomish erba livello-23 breloom erba/lotta
+breloom -e shroomish
+slakoth normale livello-18 vigoroth normale livello-36 slaking normale
+vigoroth -e slakoth
+slaking -e slakoth
+nincada coleottero/terra livello-20 ninjask coleottero/volante -a se-nella-squadra-del-giocatore-e'-presente-almeno-uno-spazio-libero-e-nella-borsa-e'-presente-almeno-una-poké-ball shedinja coleottero/spettro
+nincada(pre-4g) coleottero/terra livello-20 ninjask(pre-4g) coleottero/volante -a se-nella-squadra-del-giocatore-e'-presente-almeno-uno-spazio-libero shedinja(pre-4g) coleottero/spettro
+ninjask -e nincada
+ninjask(pre-4g) -e nincada(pre-4g)
+shedinja -e nincada
+shedinja(pre-4g) -e nincada(pre-4g)
+whismur normale livello-20 loudred normale livello-40 exploud normale
+loudred -e whismur
+exploud -e whismur
+makuhita lotta livello-24 hariyama lotta
+hariyama -e makuhita
+azurill normale/folletto affetto-alto-e-aumento-di-livello marill acqua/folletto livello-18 azumarill acqua/folletto
+azurill(pre-6g) normale affetto-alto-e-aumento-di-livello maril(pre-6g) acqua livello-18 azumarill acqua
+nosepass roccia aumento-di-livello-in-un-campo-magnetico-speciale probopass roccia/acciaio
+nosepass(pre-4g) roccia
+skitty normale pietralunare delcatty normale
+delcatty -e skitty
+sableye buio/spettro
+mawile acciaio/folletto
+mawile(pre-6g) acciaio
+aron acciaio/roccia livello-32 lairon acciaio/roccia livello-42 aggron acciaio/roccia
+lairon -e aron
+aggron -e aron
+meditite lotta/psico livello-37 medicham lotta/psico
+medicham -e meditite
+electrike elettro livello-26 manectric elettro
+manectric -e electrike
+plusle elettro
+minun elettro
+volbeat coleottero
+illumise coleottero
+roselia -e budew
+roselia(pre-4g) erba/veleno
+gulpin veleno livello-26 swalot veleno
+swalot -e gulpin
+carvanha acqua/buio livello-30 sharpedo acqua/buio
+sharpedo -e carvanha
+wailmer acqua livello-40 wailord acqua
+wailord -e wailmer
+numel fuoco/terra livello-33 camerupt fuoco/terra
+camerupt -e numel
+torkoal fuoco
+spoink psico livello-32 grumpig psico
+grumpig -e spoink
+spinda normale
+trapinch terra livello-35 vibrava terra/drago livello-45 flygon terra/drago
+vibrava -e trapinch
+flygon -e trapinch
+cacnea erba livello-32 cacturne erba/buio
+cacturne -e cacnea
+swablu normale/volante livello-35 altaria drago/volante
+altaria -e swablu
+zangoose normale
+seviper veleno
+lunatone roccia/psico
+solrock roccia/psico
+barboach acqua/terra livello-30 whiscash acqua/terra
+whiscash -e barboach
+corpish acqua livello-30 crawdaunt acqua/buio
+crawdaunt -e corpish
+baltoy terra/psico livello-36 claydol terra/psico
+claydol -e baltoy
+lileep roccia/erba livello-40 cradily roccia/erba
+cradily -e lileep
+anorith roccia/coleottero livello-40 armaldo roccia/coleottero
+armaldo -e anorith
+feebas acqua scambio-con-squama-bella milotic acqua
+feebas(pre-5g) acqua bellezza-alta-e-aumento-di-livello milotic(pre-5g) acqua
+milotic -e feebas
+milotic(pre-5g) -e feebas(pre-5g)
+castform normale
+kecleon normale
+shuppet spettro livello-37 banette spettro
+banette -e shuppet
+duskull spettro livello-37 dusclops spettro scambio-con-terrorpanno dusknoir spettro
+duskull(pre-4g) spettro livello-37 dusclops(pre-4g) spettro
+dusclops -e duskull
+dusclops(pre-4g) -e duskull(pre-4g)
+tropius erba/volante
+chimecho -e chingling
+chimecho(pre-4g) psico
+absol buio
+wynaut psico livello-15 wobbuffet psico
+snorunt ghiaccio livello-42 glalie ghiaccio -a pietralbore-se-femmina froslass ghiaccio/spettro
+snorunt(pre-4g) ghiaccio livello-42 glalie(pre-4g) ghiaccio
+glalie -e snorunt
+glalie(pre-4g) -e snorunt(pre-4g)
+spheal ghiaccio/acqua livello-32 sealeo ghiaccio/acqua livello-44 walrein ghiaccio/acqua
+sealeo -e spheal
+walrein -e spheal
+clamperl acqua scambio-con-squamabissi gorebyss acqua -a scambio-con-dente-abissi huntail acqua
+gorebyss -e clamperl
+huntail -e clamperl
+relicanth acqua/roccia
+luvdisc acqua
+bagon drago livello-30 shelgon drago livello-50 salamence drago/volante
+shelgon -e bagon
+salamence -e bagon
+beldum acciaio/psico livello-20 metang acciaio/psico livello-45 metagross acciaio/psico
+metang -e beldum
+metagross -e beldum
+regirock roccia
+regice ghiaccio
+registeel acciaio
+latias drago/psico
+latios drago/psico
+kyogre acqua
+groudon terra
+rayquaza drago/volante
+jirachi acciaio/psico
+deoxys psico

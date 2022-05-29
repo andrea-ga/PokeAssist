@@ -296,6 +296,8 @@ def info(update: Update, context: CallbackContext):
                 update.message.reply_html("<u>PER GENERAZIONI PRECEDENTI LA 8</u>\n\n" + show_pokemon(text[1].lower() + "(pre-8g)"))
             if pokebase.__contains__(text[1].lower() + "(pre-6g)"):
                 update.message.reply_html("<u>PER GENERAZIONI PRECEDENTI LA 6</u>\n\n" + show_pokemon(text[1].lower() + "(pre-6g)"))
+            if pokebase.__contains__(text[1].lower() + "(pre-5g)"):
+                update.message.reply_html("<u>PER GENERAZIONI PRECEDENTI LA 5</u>\n\n" + show_pokemon(text[1].lower() + "(pre-5g)"))
             if pokebase.__contains__(text[1].lower() + "(pre-4g)"):
                 update.message.reply_html("<u>PER GENERAZIONI PRECEDENTI LA 4</u>\n\n" + show_pokemon(text[1].lower() + "(pre-4g)"))
             if pokebase.__contains__(text[1].lower() + "(pre-3g)"):
@@ -440,6 +442,13 @@ def show_pokebase(update: Update, context: CallbackContext):
                             continue
                         else:
                             s = pokebase[p][1]
+                    elif pokebase.__contains__(p + "(pre-5g)"):
+                        p += "(pre-5g)"
+                        if pokebase[p][0] != "-e":
+                            mex += "[" + pokebase[p][0] + "]\n"
+                            continue
+                        else:
+                            s = pokebase[p][1]
                     elif pokebase.__contains__(p + "(pre-6g)"):
                         p += "(pre-6g)"
                         if pokebase[p][0] != "-e":
@@ -483,13 +492,13 @@ def start(update: Update, context: CallbackContext):
                               "<code>/dr folletto spettro</code>\n"
                               "<code>/dr1 coleottero</code>\n"
                               "<u><b>Mostrare Tipi ed Evoluzioni di un Pokémon\n"
-                              "(WIP: al momento sono presenti solo le Generazioni 1 e 2):</b></u>\n"
+                              "(WIP: al momento sono presenti solo le Generazioni 1,2 e 3):</b></u>\n"
                               "<code>/info nomePokémon</code>\n"
                               "Esempi:\n"
                               "<code>/info bulbasaur</code>\n"
                               "<code>/info charizard</code>\n"
                               "<u><b>Mostrare Nomi e Tipi di tutti i Pokémon\n"
-                              "(WIP: al momento sono presenti solo le Generazioni 1 e 2):</b></u>\n"
+                              "(WIP: al momento sono presenti solo le Generazioni 1,2 e 3):</b></u>\n"
                               "<code>/all</code>")
 
 
@@ -503,13 +512,13 @@ def help(update: Update, context: CallbackContext):
                               "<code>/dr folletto spettro</code>\n"
                               "<code>/dr1 coleottero</code>\n"
                               "<u><b>Mostrare Tipi ed Evoluzioni di un Pokémon\n"
-                              "(WIP: al momento sono presenti solo le Generazioni 1 e 2):</b></u>\n"
+                              "(WIP: al momento sono presenti solo le Generazioni 1, 2 e 3):</b></u>\n"
                               "<code>/info nomePokémon</code>\n"
                               "Esempi:\n"
                               "<code>/info bulbasaur</code>\n"
                               "<code>/info charizard</code>\n"
                               "<u><b>Mostrare Nomi e Tipi di tutti i Pokémon\n"
-                              "(WIP: al momento sono presenti solo le Generazioni 1 e 2):</b></u>\n"
+                              "(WIP: al momento sono presenti solo le Generazioni 1, 2 e 3):</b></u>\n"
                               "<code>/all</code>")
 
 
