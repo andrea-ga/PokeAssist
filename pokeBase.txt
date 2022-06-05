@@ -670,5 +670,5 @@ cresselia psico
 phione acqua
 manaphy acqua
 darkrai buio
-shaymin erba -a shaymin(forma-cielo) erba/volante
+shaymin erba -a fiore-di-gracidea shaymin(forma-cielo) erba/volante
 arceus normale -a lastrapugno arceus(lotta) lotta -a lastracielo arceus(volante) volante -a lastrafiele arceus(veleno) veleno -a lastrageo arceus(terra) terra -a lastrapietra arceus(roccia) roccia -a lastrabaco arceus(coleottero) coleottero -a lastratetra arceus(spettro) spettro -a lastraferro arceus(acciaio) acciaio -a lastrarogo arceus(fuoco) fuoco -a lastraidro arceus(acqua) acqua -a lastraprato arceus(erba) erba -a lastrasaetta arceus(elettro) elettro -a lastramente arceus(psico) psico -a lastragelo arceus(ghiaccio) ghiaccio -a lastradrakon arceus(drago) drago -a lastratimore arceus(buio) buio -a lastraspiritello arceus(folletto) folletto
