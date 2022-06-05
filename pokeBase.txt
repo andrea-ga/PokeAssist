@@ -201,7 +201,7 @@ electabuzz -e elekid
 electabuzz(pre-4g) -e elekid(pre-4g)
 electabuzz(pre-2g) elettro
 magmar -e magby
-magmar(pre-4g) -e magby(pre.4g)
+magmar(pre-4g) -e magby(pre-4g)
 magmar(pre-2g) fuoco
 pinsir coleottero
 tauros normale
@@ -281,7 +281,7 @@ cleffa(pre-6g) normale alto-affetto-e-aumento-di-livello clefairy(pre-6g) normal
 igglybuff normale/folletto alto-affetto-e-aumento-di-livello jigglypuff normale/folletto pietralunare wigglytuff normale/folletto
 igglybuff(pre-6g) normale alto-affetto-e-aumento-di-livello jigglypuff(pre-6g) normale pietralunare wigglytuff(pre-6g) normale
 togepi folletto alto-affetto-e-aumento-di-livello togetic folletto/volante pietrabrillo togekiss folletto/volante
-togepi(pre-6g) normale alto-affetto-e-aumento-di-livello togetic(pre-6g) normale/volante pietrabrillo togekiss normale/volante
+togepi(pre-6g) normale alto-affetto-e-aumento-di-livello togetic(pre-6g) normale/volante pietrabrillo togekiss(pre-6g) normale/volante
 togepi(pre-4g) normale alto-affetto-e-aumento-di-livello togetic(pre-4g) normale/volante
 togetic -e togepi
 togetic(pre-6g) -e togepi(pre-6g)
@@ -553,3 +553,122 @@ groudon terra
 rayquaza drago/volante
 jirachi acciaio/psico
 deoxys psico
+-4
+turtwig erba livello-18 grotle erba livello-32 torterra erba/terra
+grotle -e turtwig
+torterra -e turtwig
+chimchar fuoco livello-14 monferno fuoco/lotta livello-36 infernape fuoco/lotta
+monferno -e chimchar
+infernape -e chimchar
+piplup acqua livello-16 prinplup acqua livello-36 empoleon acqua/acciaio
+prinplup -e piplup
+empoleon -e piplup
+starly normale/volante livello-14 staravia normale/volante livello-34 staraptor normale/volante
+staravia -e starly
+staraptor -e starly
+bidoof normale livello-15 bibarel normale/acqua
+bibarel -e bidoof
+kricketot coleottero livello-10 kricketune coleottero
+kricketune -e kricketot
+shinx elettro livello-15 luxio elettro livello-30 luxray elettro
+luxio -e shinx
+luxray -e shinx
+budew erba/veleno alto-affetto-e-aumento-di-livello-durante-il-giorno roselia erba/veleno pietrabrillo roserade erba/veleno
+roserade -e budew
+cranidos roccia livello-30 rampardos roccia
+rampardos -e cranidos
+shieldon roccia/acciaio livello-30 bastiodon roccia/acciaio
+bastiodon -e shieldon
+burmy
+burmy coleottero livello-20-se-femmina-e-manto-pianta wormadam coleottero/erba -a livello-20-se-femmina-e-manto-sabbia wormadam coleottero/terra -a livello-20-se-femmina-e-manto-scarti wormadam coleottero/acciaio -a livello-20-se-maschio mothim coleottero/volante
+wormadam -e burmy
+mothim -e burmy
+combee coleottero/volante livello-21-se-femmina vespiqueen coleottero/volante
+vespiqueen -e combee
+pachirisu elettro
+buizel acqua livello-26 floatzel acqua
+floatzel -e buizel
+cherubi erba livello-25 cherrim erba
+cherrim -e cherubi
+shellos acqua livello-30 gastrodon acqua/terra
+gastrodon -e shellos
+ambipom -e aipom
+drifloon spettro/volante livello-28 drifblim spettro/volante
+drifblim -e drifloon
+buneary normale alto-affetto-e-aumento-di-livello lopunny normale
+lopunny -e buneary
+mismagius -e misdreavus
+honchkrow -e murkrow
+glameow normale livello-38 purugly normale
+purugly -e glameow
+chingling psico alto-affetto-e-aumento-di-livello chimecho psico
+chimecho -e chingling
+stunky veleno/buio livello-34 skuntank veleno/buio
+skuntank -e stunky
+bronzor acciaio/psico livello-33 bronzong acciaio/psico
+bronzong -e bronzor
+bonsly roccia aumento-di-livello-dopo-aver-appreso-mimica sudowoodo roccia
+mime-jr. psico/folletto aumento-di-livello-dopo-aver-appreso-mimica mr.mime psico/folletto
+mime-jr.(pre-6g) psico aumento-di-livello-dopo-aver-appreso-mimica mr.mime(pre-6g) psico
+mime-jr.(galar) psico aumento-di-livello-dopo-aver-appreso-mimica mr.mime(galar) ghiaccio/psico livello-42 mr.rime ghiaccio/psico
+happiny normale aumento-di-livello-con-pietraovale-durante-il-giorno chansey normale alto-affetto-e-aumento-di-livello blissey normale
+chatot normale/volante
+spiritomb spettro/buio
+gible drago/terra livello-24 gabite drago/terra livello-48 garchomp drago/terra
+gabite -e gible
+garchomp -e gible
+munchlax normale alto-affetto-e-aumento-di-livello snorlax normale
+riolu lotta alto-affetto-aumento-di-livello-durante-il-giorno lucario lotta/acciaio
+lucario -e riolu
+hippopotas terra livello-34 hippowdon terra
+hippowdon -e hippopotas
+skorupi veleno/coleottero livello-40 drapion veleno/buio
+drapion -e skorupi
+croagunk veleno/lotta livello-37 toxicroak veleno/lotta
+toxicroak -e croagunk
+carnivine erba
+finneon acqua livello-31 lumineon acqua
+lumineon -e finneon
+mantyke acqua/volante aumento-di-livello-con-un-remoraid-in-squadra acqua/volante
+snover erba/ghiaccio livello-40 abomasnow erba/ghiaccio
+abomasnow -e snover
+weavile -e sneasel
+magnezone -e magnemite
+magnezone(pre-8g) -e magnemite(pre-8g)
+lickilicky -e lickitung
+rhyperior -e rhyorn
+tangrowth -e tangela
+electivire -e elekid
+magmortar -e magby
+togekiss -e togepi
+togekiss(pre-6g) -e togepi(pre-6g)
+yanmega -e yanma
+leafon -e eevee
+leafon(pre-8g) -e eevee(pre-8g)
+leafon(pre-6g) -e eevee(pre-6g)
+glaceon -e eevee
+glaceon(pre-8g) -e eevee(pre-8g)
+glaceon(pre-6g) -e eevee(pre-6g)
+gliscor -e gligar
+mamoswine -e swinub
+porygon-z -e porygon
+gallade -e ralts
+gallade(pre-6g) -e ralts(pre-6g)
+probopass -e nosepass
+dusknoir -e duskull
+froslass -e snorunt
+rotom elettro/spettro -a rotom(gelo) elettro/ghiaccio -a rotom(calore) elettro/fuoco -a rotom(lavaggio) elettro/acqua -a rotom(vortice) elettro/volante -a rotom(taglio) elettro/erba
+uxie psico
+mesprit psico
+azelf psico
+dialga acciaio/drago
+palkia acqua/drago
+heatran fuoco/acciaio
+regigigas normale
+giratina spettro/drago
+cresselia psico
+phione acqua
+manaphy acqua
+drakrai buio
+shaymin erba -a shaymin(forma-cielo) erba/volante
+arceus normale -a lastrapugno arceus(lotta) lotta -a lastracielo arceus(volante) volante -a lastrafiele arceus(veleno) veleno -a lastrageo arceus(terra) terra -a lastrapietra arceus(roccia) roccia -a lastrabaco arceus(coleottero) coleottero -a lastratetra arceus(spettro) spettro -a lastraferro arceus(acciaio) acciaio -a lastrarogo arceus(fuoco) fuoco -a lastraidro arceus(acqua) acqua -a lastraprato arceus(erba) erba -a lastrasaetta arceus(elettro) elettro -a lastramente arceus(psico) psico -a lastragelo arceus(ghiaccio) ghiaccio -a lastradrakon arceus(drago) drago -a lastratimore arceus(buio) buio -a lastraspiritello arceus(folletto) folletto
