@@ -657,7 +657,8 @@ gallade(pre-6g) -e ralts(pre-6g)
 probopass -e nosepass
 dusknoir -e duskull
 froslass -e snorunt
-rotom elettro/spettro -a rotom(gelo) elettro/ghiaccio -a rotom(calore) elettro/fuoco -a rotom(lavaggio) elettro/acqua -a rotom(vortice) elettro/volante -a rotom(taglio) elettro/erba
+rotom elettro/spettro -a frigorifero rotom(gelo) elettro/ghiaccio -a microonde rotom(calore) elettro/fuoco -a lavatrice rotom(lavaggio) elettro/acqua -a ventilatore rotom(vortice) elettro/volante -a falciatrice rotom(taglio) elettro/erba
+rotom(pre-5g) elettro/spettro -a frigorifero rotom(gelo) elettro/spettro -a microonde rotom(calore) elettro/spettro -a lavatrice rotom(lavaggio) elettro/spettro -a ventilatore rotom(vortice) elettro/spettro -a falciatrice rotom(taglio) elettro/spettro
 uxie psico
 mesprit psico
 azelf psico
