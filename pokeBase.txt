@@ -629,7 +629,7 @@ toxicroak -e croagunk
 carnivine erba
 finneon acqua livello-31 lumineon acqua
 lumineon -e finneon
-mantyke acqua/volante aumento-di-livello-con-un-remoraid-in-squadra acqua/volante
+mantyke acqua/volante aumento-di-livello-con-un-remoraid-in-squadra mantine acqua/volante
 snover erba/ghiaccio livello-40 abomasnow erba/ghiaccio
 abomasnow -e snover
 weavile -e sneasel
