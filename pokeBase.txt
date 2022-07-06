@@ -673,3 +673,175 @@ manaphy acqua
 darkrai buio
 shaymin erba -a fiore-di-gracidea shaymin(forma-cielo) erba/volante
 arceus normale -a lastrapugno arceus(lotta) lotta -a lastracielo arceus(volante) volante -a lastrafiele arceus(veleno) veleno -a lastrageo arceus(terra) terra -a lastrapietra arceus(roccia) roccia -a lastrabaco arceus(coleottero) coleottero -a lastratetra arceus(spettro) spettro -a lastraferro arceus(acciaio) acciaio -a lastrarogo arceus(fuoco) fuoco -a lastraidro arceus(acqua) acqua -a lastraprato arceus(erba) erba -a lastrasaetta arceus(elettro) elettro -a lastramente arceus(psico) psico -a lastragelo arceus(ghiaccio) ghiaccio -a lastradrakon arceus(drago) drago -a lastratimore arceus(buio) buio -a lastraspiritello arceus(folletto) folletto
+-5
+victini psico/fuoco
+snivy erba livello-17 servine erba livello-36 serperior erba
+servine -e snivy
+serperior -e snivy
+tepig fuoco livello-17 pignite fuoco/lotta livello-36 emboar fuoco/lotta
+pignite -e tepig
+emboar -e tepig
+oshawott acqua livello-17 dewott acqua livello-36 samurott acqua
+oshawott(hisui) acqua livello-17 dewott(hisui) acqua livello-36 samurott acqua/buio
+dewott -e oshawott
+dewott(hisui) -e oshawott(hisui)
+samurott -e oshawott
+samurott(hisui) -e oshawott(hisui)
+patrat normale livello-20 whatchog normale
+watchog -e patrat
+lillipup normale livello-16 herdier normale livello-32 stoutland normale
+herdier -e lillipup
+stoutland -e lillipup
+purrloin buio livello-20 liepard buio
+liepard -e purrloin
+pansage erba pietrafoglia simisage erba
+simisage -e pansage
+pansear fuoco pietrafocaia simisear fuoco
+simisear -e pansear
+panpour acqua pietraidrica simipour acqua
+simipour -e panpour
+munna psico pietralunare musharna psico
+musharna -e munna
+pidove normale/volante livello-21 tranquill normale/volante livello-32 unfezant normale/volante
+tranquill -e pidove
+unfezant -e pidove
+blitzle elettro livello-27 zebstrika elettro
+zebstrika -e blitzle
+roggenrola roccia livello-25 boldore roccia scambio gigalith roccia
+boldore -e roggenrola
+gigalith -e roggenrola
+woobat psico/volante alto-affetto-e-aumento-di-livello swoobat psico/volante
+swoobat -e woobat
+drilbur terra livello-31 excadrill terra/acciaio
+excadrill -e drilbur
+audino normale
+timburr lotta livello-25 gardurr lotta scambio conkeldurr lotta
+gardurr -e timburr
+conkeldurr -e timburr
+tympole acqua livello-25 palpitoad acqua/terra livello-36 seismitoad acqua/terra
+palpitoad -e tympole
+seismitoad -e tympole
+throh lotta
+sawk lotta
+sewaddle coleottero/erba livello-20 swadloon coleottero/erba alto-affetto-e-aumento-di-livello leavanny coleottero/erba
+swadloon -e sewaddle
+leavanny -e sewaddle
+venipede coleottero/veleno livello-22 whirlipede coleottero/veleno livello-30 scolipede coleottero/veleno
+whirlipede -e venipede
+scolipede -e venipede
+cottonee erba/folletto pietrasolare whimsicott erba/folletto
+cottonee(pre-6g) erba pietrasolare whimsicott(pre-6g) erba
+whimsicott -e cottonee
+whimsicott(pre-6g) -e cottonee(pre-6g)
+petilil erba pietrasolare lilligant
+petilil(hisui) erba pietrasolare lilligant(hisui) erba/lotta
+lilligant -e petilil
+lilligant(hisui) -e petilil(hisui)
+basculin acqua se-forma-linea-bianca-dopo-aver-subito-almeno-294-danni-da-contraccolpo-escludendo-quelli-che-portano-KO basculegion acqua/spettro
+sandile terra/buio livello-29 krokorok terra/buio livello-40 krookodile terra/buio
+krokorok -e sandile
+krookodile -e sandile
+darumaka fuoco livello-35 darmanitan fuoco -a stato-zen darmanitan fuoco/psico
+darumaka(galar) ghiaccio pietragelo darmanitan(galar) ghiaccio -a stato-zen darmanitan(galar) ghiaccio/fuoco
+darmanitan -e darumaka
+darmanitan(galar) -e darumaka(galar)
+maractus erba
+dwebble coleottero/roccia livello-34 crustle coleottero/roccia
+crustle -e dwebble
+scraggy buio/lotta livello-39 scrafty buio/lotta
+scrafty -e scraggy
+sigilyph psico/volante
+yamask spettro livello-34 cofagrigus spettro
+yamask(galar) terra/spettro se-il-giocatore-passa-sotto-al-ponte-roccioso-nella-conca-delle-sabbie-dopo-che-il-pokémon-ha-accumulato-almeno-49-PS-di-danni-diretti-inflitti-da-mosse-avversarie-senza-essere-curato runerigus terra/spettro
+cofagrigus -e yamask
+tirtouga acqua/roccia livello-37 carracosta acqua/roccia
+carracosta -e tirtouga
+archen roccia/volante livello-37 archeops roccia/volante
+archeops -e archen
+trubbish veleno livello-36 garbodor veleno
+garbodor -e trubbish
+zorua buio livello-30 zoroark buio
+zorua(hisui) normale/spettro livello-30 zoroark(hisui) normale/spettro
+zoroark -e zorua
+zoroark(hisui) -e zorua(hisui)
+minccino normale pietrabrillo cinccino normale
+cinccino -e minccino
+gothita psico livello-32 gothorita psico livello-41 gothitelle psico
+gothorita -e gothita
+gothitelle -e gothita
+solosis psico livello-32 duosion psico livello-41 reuniclus psico
+duosion -e solosis
+reuniclus -e solosis
+ducklett acqua/volante livello-35 swanna acqua/volante
+swanna -e ducklett
+vanillite ghiaccio livello-35 vanillish ghiaccio livello-47 vanilluxe ghiaccio
+vanillish -e vanillite
+vanilluxe -e vanillite
+deerling normale/erba livello-34 sawsbuck normale/erba
+sawsbuck -e deerling
+emolga elettro/volante
+karrablast coleottero se-scambiato-per-uno-shelmet escavalier coleottero/acciaio
+escavalier -e karrablast
+foongus erba/veleno livello-39 amoonguss erba/veleno
+amoonguss -e foongus
+frillish acqua/spettro livello-40 jellicent acqua/spettro
+jellicent -e frillish
+alomomola acqua
+joltik coleottero/elettro livello-36 galvantula coleottero/elettro
+galvantula -e joltik
+ferroseed erba/acciaio livello-40 ferrothorn erba/acciaio
+ferrothorn -e ferroseed
+klink acciaio livello-38 klang acciaio livello-49 klinklang acciaio
+klang -e klink
+klinklang -e klink
+tynamo elettro livello-39 eelektrik elettro pietratuono elektross elettro
+eelektrik -e tynamo
+elektross -e tynamo
+elgyem psico livello-42 beheeyem psico
+beheeyem -e elgyem
+litwick spettro/fuoco livello-41 lampent spettro/fuoco neropietra chandelure spettro/fuoco
+lampent -e litwick
+chandelure -e litwick
+axew drago livello-38 fraxure drago livello-48 haxorus drago
+fraxure -e axew
+haxorus -e axew
+cubchoo ghiaccio livello-37 beartic ghiaccio
+beartic -e cubchoo
+cryogonal ghiaccio
+shelmet coleottero se-scambiato-per-karrablast accelgor coleottero
+accelgor -e shelmet
+stunfisk terra/elettro
+stunfisk(galar) terra/acciaio
+mienfoo lotta livello-50 mienshao lotta
+mienshao -e mienfoo
+druddigon drago
+golett terra/spettro livello-43 golurk terra/spettro
+golurk -e golett
+pawniard buio/acciaio livello-52 bisharp buio/acciaio
+bisharp -e pawniard
+bouffalant normale
+rufflet normale/volante livello-54 braviary normale/volante
+rufflet(hisui) normale/volante livello-54 braviary(hisui) psico/volante
+braviary -e rufflet
+braviary(hisui) -e rufflet(hisui)
+vullaby buio/volante livello-54 mandibuzz buio/volante
+mandibuzz -e vullaby
+heatmor fuoco
+durant coleottero/acciaio
+deino buio/drago livello-50 zweilous buio/drago livello-64 hydreigon buio/drago
+zweilous -e deino
+hydreigon -e deino
+larvesta coleottero/fuoco livello-59 volcarona coleottero/fuoco
+volcarona -e larvesta
+cobalion acciaio/lotta
+terrakion roccia/terra
+virizion erba/lotta
+tornadus volante -a verispecchio tornadus(forma-totem) volante
+thundurus elettro/volante -a verispecchio thundurus(forma-totem) elettro/volante
+reshiram drago/fuoco
+zekrom drago/elettro
+landorus terra/volante -a verispecchio landorus(forma-totem) terra/volante
+kyurem drago/ghiaccio -a cuneo-dna-con-reshiram kyurem-bianco drago/ghiaccio -a cuneo-dna-con-zekrom kyurem-nero drago/ghiaccio
+keldeo acqua/lotta -a con-spada-mistica keldeo(forma-risoluta) acqua/lotta
+meloetta normale/psico -a usando-canto-antico meloetta(forma-danza) normale/lotta
+genesect coleottero/acciaio
