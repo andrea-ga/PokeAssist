@@ -687,7 +687,7 @@ dewott -e oshawott
 dewott(hisui) -e oshawott(hisui)
 samurott -e oshawott
 samurott(hisui) -e oshawott(hisui)
-patrat normale livello-20 whatchog normale
+patrat normale livello-20 watchog normale
 watchog -e patrat
 lillipup normale livello-16 herdier normale livello-32 stoutland normale
 herdier -e lillipup
@@ -733,7 +733,7 @@ cottonee erba/folletto pietrasolare whimsicott erba/folletto
 cottonee(pre-6g) erba pietrasolare whimsicott(pre-6g) erba
 whimsicott -e cottonee
 whimsicott(pre-6g) -e cottonee(pre-6g)
-petilil erba pietrasolare lilligant
+petilil erba pietrasolare lilligant erba
 petilil(hisui) erba pietrasolare lilligant(hisui) erba/lotta
 lilligant -e petilil
 lilligant(hisui) -e petilil(hisui)
