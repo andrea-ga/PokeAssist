@@ -682,7 +682,7 @@ tepig fuoco livello-17 pignite fuoco/lotta livello-36 emboar fuoco/lotta
 pignite -e tepig
 emboar -e tepig
 oshawott acqua livello-17 dewott acqua livello-36 samurott acqua
-oshawott(hisui) acqua livello-17 dewott(hisui) acqua livello-36 samurott acqua/buio
+oshawott(hisui) acqua livello-17 dewott(hisui) acqua livello-36 samurott(hisui) acqua/buio
 dewott -e oshawott
 dewott(hisui) -e oshawott(hisui)
 samurott -e oshawott
