@@ -845,3 +845,82 @@ kyurem drago/ghiaccio -a cuneo-dna-con-reshiram kyurem-bianco drago/ghiaccio -a 
 keldeo acqua/lotta -a con-spada-mistica keldeo(forma-risoluta) acqua/lotta
 meloetta normale/psico -a usando-canto-antico meloetta(forma-danza) normale/lotta
 genesect coleottero/acciaio
+-6
+chespin erba livello-16 quilladin erba livello-36 chesnaught erba/lotta
+quilladin -e chespin
+chesnaught -e chespin
+fennekin fuoco livello-16 braixen fuoco livello-36 delphox fuoco/psico
+braixen -e fennekin
+delphox -e fennekin
+froakie acqua livello-16 frogadier acqua livello-36 greninja acqua/buio
+frogadier -e froakie
+greninja -e froakie
+bunnelby normale livello-20 diggersby normale/terra
+diggersby -e bunnelby
+fletchling normale/volante livello-17 fletchinder fuoco/volante livello-35 talonflame fuoco/volante
+fletchinder -e fletching
+talonflame -e fletching
+scatterbug coleottero livello-9 spewpa coleottero livello-12 vivillon coleottero/volante
+spewpa -e scatterbug
+vivillon -e scatterbug
+litleo fuoco/normale livello-35 pyroar fuoco/normale
+pyroar -e litleo
+flabébé folletto livello-19 floette folletto pietrabrillo florges folletto
+floette -e flabébé
+florges -e flabébé
+skiddo erba livello-32 gogoat erba
+gogoat -e skiddo
+pancham lotta livello-32-con-pokémon-di-tipo-buio-in-squadra pangoro lotta/buio
+pangoro -e pancham
+furfrou normale
+espurr pisco livello-25 meowstic psico
+meowstic -e espurr
+honedge acciaio/spettro livello-35 doublade acciaio/spettro neropietra aegislash acciaio/spettro
+doublade -e honedge
+aegislash -e honedge
+spritzee folletto scambio-con-bustina-aromi aromatisse folletto
+aromatisse -e spritzee
+swirlix folletto scambio-con-dolcespuma slurpuff folletto
+slurpuff -e swirlix
+inkay buio/psico livello-30-capovolgendo-la-console-quando-sale-di-livello malamar buio/psico
+malamar -e inkay
+binacle roccia/acqua livello-39 barbaracle roccia/acqua
+barbaracle -e binacle
+skrelp veleno/acqua livello-48 dragalge veleno/drago
+dragalge -e skrelp
+clauncher acqua livello-37 clawitzer acqua
+clawitzer -e clauncher
+helioptile elettro/normale pietrasolare heliolisk elettro/normale
+heliolisk -e helioptile
+tyrunt roccia/drago livello-39-di-giorno tyrantrum roccia/drago
+tyrantrum -e tyrunt
+amaura roccia/ghiaccio livello-39-di-notte aurorus roccia/ghiaccio
+aurorus -e amaura
+sylveon -e eevee
+sylveon(pre-8g) -e eevee(pre-8g)
+hawlucha lotta/volante
+dedenne elettro/folletto
+carbink roccia/folletto
+goomy drago livello-40 sliggoo drago livello-50-in-una-zona-in-cui-c'è-pioggia-o-nebbia goodra drago
+goomy(hisui) drago livello-40 sliggoo(hisui) drago/acciaio livello-50-in-una-zona-in-cui-c'è-pioggia-o-nebbia goodra(hisui) drago/acciaio
+sliggoo -e goomy
+sliggoo(hisui) -e goomy(hisui)
+goodra -e goomy
+goodra(hisui) -e goomy(hisui)
+klefki acciaio/folletto
+phantump spettro/erba scambio trevenant spettro/erba
+trevenant -e phantump
+pumpkaboo spettro/erba scambio gourgeist spettro/erba
+gourgeist -e pumpkaboo
+bergmite ghiaccio livello-37 avalugg ghiaccio
+bergmite(hisui) ghiaccio livello-37 avalugg(hisui) ghiaccio/roccia
+avalugg -e bergmite
+avalugg(hisui) -e bergmite(hisui)
+noibat volante/drago livello-48 noivern volante/drago
+noivern -e noibat
+xerneas folletto
+yveltal buio/volante
+zygarde drago/terra
+diancie roccia/folletto
+hoopa psico/spettro vaso-del-vincolo hoopa(libero) psico/buio
+volcanion fuoco/acqua
