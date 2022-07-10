@@ -858,8 +858,8 @@ greninja -e froakie
 bunnelby normale livello-20 diggersby normale/terra
 diggersby -e bunnelby
 fletchling normale/volante livello-17 fletchinder fuoco/volante livello-35 talonflame fuoco/volante
-fletchinder -e fletching
-talonflame -e fletching
+fletchinder -e fletchling
+talonflame -e fletchling
 scatterbug coleottero livello-9 spewpa coleottero livello-12 vivillon coleottero/volante
 spewpa -e scatterbug
 vivillon -e scatterbug
