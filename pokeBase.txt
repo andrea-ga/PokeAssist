@@ -1000,7 +1000,7 @@ tapu-koko elettro/folletto
 tapu-lele psico/folletto
 tapu-bulu erba/folletto
 tapu-fini acqua/folletto
-cosmog psico livello-43 cosmoem in-sole,-ultrasole-e-spada solgaleo psico/acciaio -a in-luna,-ultraluna-e-scudo lunala psico/spettro
+cosmog psico livello-43 cosmoem psico in-sole,-ultrasole-e-spada solgaleo psico/acciaio -a in-luna,-ultraluna-e-scudo lunala psico/spettro
 cosmoem -e cosmog
 solgaleo -e cosmog
 lunala -e cosmog
