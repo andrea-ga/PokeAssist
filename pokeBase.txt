@@ -924,3 +924,100 @@ zygarde drago/terra
 diancie roccia/folletto
 hoopa psico/spettro vaso-del-vincolo hoopa(libero) psico/buio
 volcanion fuoco/acqua
+-7
+rowlet erba/volante livello-17 dartrix erba/volante livello-34 decidueye erba/spettro
+rowlet(hisui) erba/volante livello-17 dartrix(hisui) erba/volante livello-36 decidueye(hisui) erba/lotta
+dartrix -e rowlet
+dartrix(hisui) -e rowlet(hisui)
+decidueye -e rowlet
+decidueye(hisui) -e rowlet(hisui)
+litten fuoco livello-17 torracat fuoco livello-34 incineroar fuoco/buio
+torracat -e litten
+incineroar -e litten
+popplio acqua livello-17 brionne acqua livello-34 primarina acqua/folletto
+brionne -e popplio
+primarina -e popplio
+pikipek normale/volante livello-14 trumbeak normale/volante livello-28 toucannon normale/volante
+trumbeak -e pikipek
+toucannon -e pikipek
+yungoos normale livello-20-durante-il-giorno gumshoos normale
+gumshoos -e yungoos
+grubbin coleottero livello-20 charjabug coleottero/elettro pietratuono vikavolt coleottero/elettro
+grubbin(pre-8g) coleottero livello-20 charjabug(pre-8g) coleottero/elettro aumento-di-livello-in-un-campo-magnetico-speciale vikavolt(pre-8g) coleottero/elettro
+charjabug -e grubbin
+charjabug(pre-8g) -e grubbin(pre-8g)
+vikavolt -e grubbin
+vikavolt(pre-8g) -e grubbin(pre-8g)
+crabrawler lotta aumento-di-livello-presso-il-monte-lanakila crabominable lotta/ghiaccio
+crabominable -e crabrawler
+oricorio fuoco/volante -a nettare-giallo oricorio elettro/volante -a nettare-rosa oricorio psico/volante -a nettare-viola oricorio spettro/volante
+cutiefly coleottero/folletto livello-25 ribombee coleottero/folletto
+ribombee -e cutiefly
+rockruff roccia livello-25-e-aumento-di-livello-durante-il-giorno lycanroc roccia -a livello-25-e-aumento-di-livello-durante-la-notte lycanroc(forma-notte) roccia -a livello-25-e-aumento-di-livello-tra-le-19:00-e-le-19:59-se-ha-l'abilità-mente-locale lycanroc(forma-crepuscolo) roccia
+rockruff(pre-8g) roccia livello-25-e-aumento-di-livello-durante-il-giorno lycanroc(pre-8g) roccia -a livello-25-e-aumento-di-livello-durante-la-notte lycanroc(forma-notte)(pre-8g) roccia -a livello-25-e-aumento-di-livello-tra-le-17:00-e-le-17:59-o-tra-le-5:00-e-le-5:59-se-ha-l'abilità-mente-locale lycanroc(forma-crepuscolo)(pre-8g) roccia
+lycanroc -e rockruff
+lycanroc(pre-8g) -e rockruff
+wishiwashi acqua
+mareanie veleno/acqua livello-38 toxapex veleno/acqua
+toxapex -e mareanie
+mudbray terra livello-30 mudsdale terra
+mudsdale -e mudbray
+dewpider acqua/coleottero livello-22 araquanid acqua/coleottero
+araquanid -e dewpider
+fomantis erba livello-34-durante-il-giorno lurantis erba
+lurantis -e fomantis
+morellul erba/folletto livello-24 shiinotic erba/folletto
+shiinotic -e morellul
+salandit veleno/fuoco livello-33-se-femmina salazzle veleno/fuoco
+salazzle -e salandit
+stufful normale/lotta livello-27 bewear normale/lotta
+bewear -e stufful
+bounsweet erba livello-18 steenee erba aumento-di-livello-dopo-aver-appreso-pestone tsareena erba
+steenee -e bounsweet
+tsareena -e bounsweet
+comfey folletto
+oranguru normale/psico
+passimian lotta
+wimpod coleottero/acqua livello-30 golisopod coleottero/acqua
+golisopod -e wimpod
+sandygast spettro/terra livello-42 palossand spettro/terra
+palossand -e sandygast
+pyukumuku acqua
+tipo-zero normale alto-affetto-e-aumento-di-livello silvally normale -a alto-affetto-e-aumento-di-livello-con-rom-acciaio silvally acciaio -a alto-affetto-e-aumento-di-livello-con-rom-acqua silvally acqua -a alto-affetto-e-aumento-di-livello-con-rom-buio silvally buio -a alto-affetto-e-aumento-di-livello-con-rom-coleottero silvally coleottero -a alto-affetto-e-aumento-di-livello-con-rom-drago silvally drago -a alto-affetto-e-aumento-di-livello-con-rom-elettro silvally elettro -a alto-affetto-e-aumento-di-livello-con-rom-erba silvally erba -a alto-affetto-e-aumento-di-livello-con-rom-folletto silvally folletto -a alto-affetto-e-aumento-di-livello-con-rom-fuoco silvally fuoco -a alto-affetto-e-aumento-di-livello-con-rom-ghiaccio silvally ghiaccio -a alto-affetto-e-aumento-di-livello-con-rom-lotta silvally lotta -a alto-affetto-e-aumento-di-livello-con-rom-psico silvally psico -a alto-affetto-e-aumento-di-livello-con-rom-roccia silvally roccia -a alto-affetto-e-aumento-di-livello-con-rom-spettro silvally spettro -a alto-affetto-e-aumento-di-livello-con-rom-terra silvally terra -a alto-affetto-e-aumento-di-livello-con-rom-veleno silvally veleno -a alto-affetto-e-aumento-di-livello-con-rom-volante silvally volante
+silvally -e tipo-zero
+minior roccia/volante
+komala normale
+turtonator fuoco/drago
+togedamaru elettro/acciaio
+mimikyu spettro/folletto
+bruxish acqua/psico
+drampa normale/drago
+dhelmise spettro/erba
+jangmo_o drago livello-35 hakamo_o drago/lotta livello-45 kommo_o drago/lotta
+hakamo_o -e jangmo_o
+kommo_o -e jangmo_o
+tapu-koko elettro/folletto
+tapu-lele psico/folletto
+tapu-bulu erba/folletto
+tapu-fini acqua/folletto
+cosmog psico livello-43 cosmoem in-sole,-ultrasole-e-spada solgaleo psico/acciaio -a in-luna,-ultraluna-e-scudo lunala psico/spettro
+cosmoem -e cosmog
+solgaleo -e cosmog
+lunala -e cosmog
+nihilego roccia/veleno
+buzzwole coleottero/lotta
+pheromosa coleottero/lotta
+xurkitree elettro
+celesteela acciaio/volante
+kartana erba/acciaio
+guzzlord buio/drago
+necrozma pisco necrosolix-con-solgaleo necrozma(criniera-del-vespro) pisco/acciaio -a necrolunix-con-lunala necrozma(ali-dell'-aurora) psico/spettro -a quando-le-due-forme-precedenti-tengono-un-ultranecrozium-z-e-durante-la-lotta-viene-avviato-il-processo-di-ultraesplosione necrozma(ultraNecrozma) psico/drago
+magearna acciaio/folletto
+marshadow lotta/spettro
+poipole veleno aumento-di-livello-dopo-aver-appreso-dragopulsar naganadel veleno/drago
+naganadel -e poipole
+stakataka roccia/acciaio
+blacephalon fuoco/spettro
+zeraora elettro
+meltan acciaio 400-caramelle-meltan-in-pokémon-GO melmetal acciaio
+melmetal -e meltan
