@@ -509,14 +509,12 @@ def start(update: Update, context: CallbackContext):
                               "<code>/dr fuoco</code>\n"
                               "<code>/dr folletto spettro</code>\n"
                               "<code>/dr1 coleottero</code>\n"
-                              "<u><b>Mostrare Tipi ed Evoluzioni di un Pokémon\n"
-                              "(WIP: al momento sono presenti solo le Generazioni 1, 2, 3, 4, 5, 6 e 7):</b></u>\n"
+                              "<u><b>Mostrare Tipi ed Evoluzioni di un Pokémon:</b></u>\n"
                               "<code>/info nomePokémon</code>\n"
                               "Esempi:\n"
                               "<code>/info bulbasaur</code>\n"
                               "<code>/info charizard</code>\n"
-                              "<u><b>Mostrare Nomi e Tipi di tutti i Pokémon\n"
-                              "(WIP: al momento sono presenti solo le Generazioni 1, 2, 3, 4, 5, 6 e 7):</b></u>\n"
+                              "<u><b>Mostrare Nomi e Tipi di tutti i Pokémon:</b></u>\n"
                               "<code>/all</code>")
 
 
@@ -529,14 +527,12 @@ def help(update: Update, context: CallbackContext):
                               "<code>/dr fuoco</code>\n"
                               "<code>/dr folletto spettro</code>\n"
                               "<code>/dr1 coleottero</code>\n"
-                              "<u><b>Mostrare Tipi ed Evoluzioni di un Pokémon\n"
-                              "(WIP: al momento sono presenti solo le Generazioni 1, 2, 3, 4, 5, 6 e 7):</b></u>\n"
+                              "<u><b>Mostrare Tipi ed Evoluzioni di un Pokémon:</b></u>\n"
                               "<code>/info nomePokémon</code>\n"
                               "Esempi:\n"
                               "<code>/info bulbasaur</code>\n"
                               "<code>/info charizard</code>\n"
-                              "<u><b>Mostrare Nomi e Tipi di tutti i Pokémon\n"
-                              "(WIP: al momento sono presenti solo le Generazioni 1, 2, 3, 4, 5, 6 e 7):</b></u>\n"
+                              "<u><b>Mostrare Nomi e Tipi di tutti i Pokémon:</b></u>\n"
                               "<code>/all</code>")
 
 

@@ -1021,3 +1021,98 @@ blacephalon fuoco/spettro
 zeraora elettro
 meltan acciaio 400-caramelle-meltan-in-pokémon-GO melmetal acciaio
 melmetal -e meltan
+-8
+grookey erba livello-16 thwackey erba livello-35 rillaboom erba
+thwackey -e grookey
+rillaboom -e grookey
+scorbunny fuoco livello-16 raboot fuoco livello-35 cinderace fuoco
+raboot -e scorbunny
+cinderace -e scorbunny
+sobble acqua livello-16 drizzile acqua livello-35 inteleon acqua
+drizzile -e sobble
+inteleon -e sobble
+skwovet normale livello-24 greedent normale
+greedent -e skwovet
+rookidee volante livello-18 corvisquire volante livello-38 corviknight volante/acciaio
+blipbug coleottero livello-10 dottler coleottero/psico livello-30 orbeetle coleottero/psico
+dottler -e blipbug
+orbeetle -e blipbug
+nickit buio livello-18 thievul buio
+thievul -e nickit
+gossifleur erba livello-20 eldegoss erba
+eldegoss -e gossifleur
+wooloo normale livello-24 dubwool normale
+dubwool -e wooloo
+chewtle acqua livello-22 drednaw acqua/roccia
+drednaw -e chewtle
+yamper elettro livello-25 boltund eletrro
+boltund -e yamper
+rolycoly roccia livello-18 carkol roccia/fuoco livello-34 coalossal roccia/fuoco
+carkol -e rolycoly
+coalossal -e rolycoly
+applin erba/drago aspropomo flapple erba/drago -a dolcepomo appletun erba/drago
+flapple -e applin
+appletun -e applin
+silicobra terra livello-36 sandaconda terra
+sandaconda -e silicobra
+cramorant volante/acqua
+arrokuda acqua livello-26 barraskewda acqua
+barraskewda -e arrokuda
+toxel elettro/veleno livello-30 toxtricity elettro/veleno
+toxtricity -e toxel
+sizzlipede fuoco/coleottero livello-28 centiskorch fuoco/coleottero
+centiskorch -e sizzlipede
+clobbopus lotta aumento-di-livello-dopo-aver-appreso-provocazione grapploct lotta
+grapploct -e clobbopus
+sinistea spettro teiera-crepata-o-teiera-rotta polteageist spettro
+polteageist -e sinistea
+hatenna psico livello-32 hattrem psico livello-42 hatterene psico/folletto
+hattrem -e hatenna
+hatterene -e hatenna
+impidimp buio/folletto livello-32 morgrem buio/folletto livello-42 grimmsnarl buio/folletto
+morgrem -e impidimp
+grimmsnarl -e impidimp
+obstagoon -e zigzagoon(galar)
+perrseker -e meowth(galar)
+cursola -e corsola(galar)
+sirfetch'd -e farfetch'd(galar)
+mr.rime -e mr.mime(galar)
+runerigus -e yamask(galar)
+milcery folletto se-il-giocatore-fa-una-piroetta-mentre-il-pokémon-tiene-un-bonbon alcremie folletto
+alcremie folletto
+falinks lotta
+pinchurchin elettro
+snom ghiaccio/coleottero alto-affetto-e-aumento-di-livello-durante-la-notte frosmoth ghiaccio/coleottero
+frosmoth -e snom
+stonjourner roccia
+eiscue ghiaccio
+indeedee psico/normale
+morpeko elettro/buio
+cufant acciaio livello-34 copperajah acciaio
+copperajah -e cufant
+dracozolt elettro/drago
+arctozolt elettro/ghiaccio
+dracovish acqua/drago
+arctovish acqua/ghiaccio
+duraludon acciaio/drago
+dreepy drago/spettro livello-50 drakloak drago/spettro livello-60 dragapult drago/spettro
+drakloak -e dreepy
+dragapult -e dreepy
+zacian folletto -a con-spada-rovinata zacian folletto/acciaio
+zamazenta lotta -a con-scudo-rovinato zamazenta lotta/acciaio
+eternatus veleno/drago
+kubfu lotta rotolo-del-buio urshifu lotta/buio -a rotolo-dell'-acqua urshifu lotta/acqua
+urshifu -e kubfu
+zarude buio/erba
+regieleki elettro
+regidrago drago
+glastrier ghiaccio
+spectrier spettro
+calyrex psico/erba -a briglie-legame-con-glastrier calyrex(forma-glaciale) psico/ghiaccio -a briglie-legame-con-spectrier calyrex(forma-spettrale) psico/spettro
+wyrdeer -e stantler(hisui)
+kleavor -e scyther(hisui)
+ursaluna -e teddiursa(hisui)
+basculegion -e basculin(hisui)
+sneasler -e sneasel(hisui)
+overqwil -e qwilfish(hisui)
+enamorus folletto/volante
