@@ -195,6 +195,7 @@ mr.mime(pre-4g) psico
 mr.mime(galar) -e mime-jr.(galar)
 scyther coleottero/volante scambio-con-metalcoperta scizor coleottero/acciaio
 scyther(pre-2g) coleottero/volante
+scyther(hisui) coleottero/volante augerite-nera kleavor coleottero/roccia
 jynx -e smoochum
 jynx(pre-2g) ghiaccio/psico
 electabuzz -e elekid
@@ -359,7 +360,7 @@ swinub(pre-4g) ghiaccio/terra livello-33 piloswine(pre-4g) ghiaccio/terra
 piloswine -e swinub
 piloswine(pre-4g) -e swinub(pre-4g)
 corsola acqua/roccia
-corsola(galar) spettro livello-38 cursola(galar) spettro
+corsola(galar) spettro livello-38 cursola spettro
 remoraid acqua livello-25 octillery acqua
 octillery -e remoraid
 delibird ghiaccio/volante
@@ -737,7 +738,8 @@ petilil erba pietrasolare lilligant erba
 petilil(hisui) erba pietrasolare lilligant(hisui) erba/lotta
 lilligant -e petilil
 lilligant(hisui) -e petilil(hisui)
-basculin acqua se-forma-linea-bianca-dopo-aver-subito-almeno-294-danni-da-contraccolpo-escludendo-quelli-che-portano-KO basculegion acqua/spettro
+basculin acqua
+basculin(hisui) acqua se-forma-linea-bianca-dopo-aver-subito-almeno-294-danni-da-contraccolpo-escludendo-quelli-che-portano-KO basculegion acqua/spettro
 sandile terra/buio livello-29 krokorok terra/buio livello-40 krookodile terra/buio
 krokorok -e sandile
 krookodile -e sandile
@@ -1034,6 +1036,8 @@ inteleon -e sobble
 skwovet normale livello-24 greedent normale
 greedent -e skwovet
 rookidee volante livello-18 corvisquire volante livello-38 corviknight volante/acciaio
+corvisquire -e rookidee
+corviknight -e rookidee
 blipbug coleottero livello-10 dottler coleottero/psico livello-30 orbeetle coleottero/psico
 dottler -e blipbug
 orbeetle -e blipbug
@@ -1073,10 +1077,10 @@ impidimp buio/folletto livello-32 morgrem buio/folletto livello-42 grimmsnarl bu
 morgrem -e impidimp
 grimmsnarl -e impidimp
 obstagoon -e zigzagoon(galar)
-perrseker -e meowth(galar)
+perrserker -e meowth(galar)
 cursola -e corsola(galar)
 sirfetch'd -e farfetch'd(galar)
-mr.rime -e mr.mime(galar)
+mr.rime -e mime-jr.(galar)
 runerigus -e yamask(galar)
 milcery folletto se-il-giocatore-fa-una-piroetta-mentre-il-pokémon-tiene-un-bonbon alcremie folletto
 alcremie folletto
