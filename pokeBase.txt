@@ -875,7 +875,7 @@ gogoat -e skiddo
 pancham lotta livello-32-con-pokémon-di-tipo-buio-in-squadra pangoro lotta/buio
 pangoro -e pancham
 furfrou normale
-espurr pisco livello-25 meowstic psico
+espurr psico livello-25 meowstic psico
 meowstic -e espurr
 honedge acciaio/spettro livello-35 doublade acciaio/spettro neropietra aegislash acciaio/spettro
 doublade -e honedge
@@ -1013,7 +1013,7 @@ xurkitree elettro
 celesteela acciaio/volante
 kartana erba/acciaio
 guzzlord buio/drago
-necrozma pisco necrosolix-con-solgaleo necrozma(criniera-del-vespro) pisco/acciaio -a necrolunix-con-lunala necrozma(ali-dell'-aurora) psico/spettro -a quando-le-due-forme-precedenti-tengono-un-ultranecrozium-z-e-durante-la-lotta-viene-avviato-il-processo-di-ultraesplosione necrozma(ultraNecrozma) psico/drago
+necrozma psico necrosolix-con-solgaleo necrozma(criniera-del-vespro) psico/acciaio -a necrolunix-con-lunala necrozma(ali-dell'-aurora) psico/spettro -a quando-le-due-forme-precedenti-tengono-un-ultranecrozium-z-e-durante-la-lotta-viene-avviato-il-processo-di-ultraesplosione necrozma(ultraNecrozma) psico/drago
 magearna acciaio/folletto
 marshadow lotta/spettro
 poipole veleno aumento-di-livello-dopo-aver-appreso-dragopulsar naganadel veleno/drago
