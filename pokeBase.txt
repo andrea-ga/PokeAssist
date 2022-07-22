@@ -995,9 +995,9 @@ mimikyu spettro/folletto
 bruxish acqua/psico
 drampa normale/drago
 dhelmise spettro/erba
-jangmo_o drago livello-35 hakamo_o drago/lotta livello-45 kommo_o drago/lotta
-hakamo_o -e jangmo_o
-kommo_o -e jangmo_o
+jangmo-o drago livello-35 hakamo-o drago/lotta livello-45 kommo-o drago/lotta
+hakamo-o -e jangmo-o
+kommo-o -e jangmo-o
 tapu-koko elettro/folletto
 tapu-lele psico/folletto
 tapu-bulu erba/folletto
