@@ -348,7 +348,7 @@ def show_pokemon(poke):
                     continue
 
                 if pos == 0:
-                    mex += "[" + i + "]\n"
+                    mex += "[<span class='tg-spoiler'>" + i + "</span>]\n"
                     pos = 1
                 elif pos == 1:
                     for n in range(num_tab):
@@ -391,7 +391,7 @@ def show_pokemon(poke):
                 continue
 
             if pos == 0:
-                mex += "[" + i + "]\n"
+                mex += "[<span class='tg-spoiler'>" + i + "</span>]\n"
                 pos = 1
             elif pos == 1:
                 for n in range(num_tab):
