@@ -867,9 +867,9 @@ spewpa -e scatterbug
 vivillon -e scatterbug
 litleo fuoco/normale livello-35 pyroar fuoco/normale
 pyroar -e litleo
-flabébé folletto livello-19 floette folletto pietrabrillo florges folletto
-floette -e flabébé
-florges -e flabébé
+flabebe folletto livello-19 floette folletto pietrabrillo florges folletto
+floette -e flabebe
+florges -e flabebe
 skiddo erba livello-32 gogoat erba
 gogoat -e skiddo
 pancham lotta livello-32-con-pokémon-di-tipo-buio-in-squadra pangoro lotta/buio
