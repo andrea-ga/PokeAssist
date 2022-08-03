@@ -354,7 +354,7 @@ def show_pokemon(poke):
                     for n in range(num_tab):
                         mex += "\t\t"
 
-                    mex += "<i>**** " + i.replace("-", " ") + " ****</i>\n"
+                    mex += "<i>**** <span class='tg-spoiler'>" + i.replace("-", " ") + "</span> ****</i>\n"
                     pos = 2
                 elif pos == 2:
                     for n in range(num_tab):
@@ -397,7 +397,7 @@ def show_pokemon(poke):
                 for n in range(num_tab):
                     mex += "\t\t"
 
-                mex += "<i>**** " + i.replace("-", " ") + " ****</i>\n"
+                mex += "<i>**** <span class='tg-spoiler'>" + i.replace("-", " ") + "</span> ****</i>\n"
                 pos = 2
             elif pos == 2:
                 for n in range(num_tab):
